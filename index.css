@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    background-color: black;
+    color: white;
+    border-bottom: #FF5733 1px solid;
+}
+#headerLeftContainer{
+    width: 60%;
+}
+
+#siteTitle{
+    padding: 2% 0 3% 5%;
+    font-family: 'Unica One', cursive;
+    font-size: 48px;
+}
+
+
+.navBarLink {
+    text-decoration: none;
+    color: white;
+    
+}
+
+#navBarContainer a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #FF5733;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  #navBarContainer a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+#navBarContainer a {
+   color: white;
+   position: relative;
+   padding: 5px;
+}
+
+#navBarContainer ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 10% 0 5%;
+    list-style: none;
+    justify-content: space-around;
+    padding-bottom: 3%;
+    padding-left: 25%;
+ }
+
+/* -------------- END OF SECTION ------------*/
+
+
+#headerRightContainer{
+    position:absolute;
+    top: 3%;
+    right: 2%;
+    min-width: 220px;
+    text-align: right;
+}
+
+#loginButtons {
+    padding: 8% 0 11% 0;
+
+}
+
+#loginButtons a {
+    color: white;
+    position: relative;
+    padding-bottom: 5px;
+
+}
+
+#loginButtons a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #FF5733;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  #loginButtons a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.RegBtn{
+    margin-left: 15%;
+    margin-right: 4%;
+}
+
+::-webkit-input-placeholder {
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+
+/* -------------- END OF SECTION ------------*/
+
+#carrousel{
+    text-align:center;
+    background-color: #2c2c2c;
+}
+
+.mainImage{
+    width: 100%;
+}
+
+/* -------------- END OF SECTION ------------*/
+
+#registration{
+    width: 50%;
+    text-align: center;
+    padding: 3% 0;
+    position: relative;
+}
+
+.regSectionTitle{
+    font-size: 23px;
+    padding: 5%;
+    color: black;
+    letter-spacing: 1.2px;
+}
+
+.text {
+    font-size: 15px;
+    padding: 0 8% 5% 8%;
+    letter-spacing: 1px;
+    
+}
+
+.regButton a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.regButton{
+    background-color: black;
+    position: absolute;
+    top: 35%;
+    left: 140%;
+    width: 150px;
+    padding: 2%;
+    border-radius: 45px;
+}
+
+.regButton:hover {
+    transition: 0.2s;
+    background-color: #FA3E2F;
+}
+
+/* -------------- END OF SECTION ------------*/
+
+#favs{
+    background-color: #2c2c2c;
+    text-align: center;
+}
+
+
+.favSectionTitle{
+    color: white;
+    font-size: 36px;
+    padding: 2% 0;
+    letter-spacing: 2px;
+}
+
+.videosContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.videoSection{
+    padding-bottom:4%;
+    width: 33%;
+}
+
+.epigraph{
+    color: white;
+    font-size: 15px;
+    padding: 3% 15%;
+    letter-spacing: 1px;
+}
+
+/* -------------- END OF SECTION ------------*/
+
+.newsSection{
+    padding: 2% 0 5% 0;
+}
+
+.pageTitle{
+    font-size: 36px;
+    padding: 2% 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.newsArticles{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+article{
+    width: 22%;
+    padding: 2% 2% 5% 0;
+    text-align: center;
+}
+
+.leerLink a{
+    color: black;
+    
+}
+
+.leerLink{
+    text-align: right;
+    padding-right: 8%;
+}
+
+.leerLink a:hover{
+    color: #FA3E2F;
+}
+
+.newsPics{
+    max-width: 250px;
+}
+
+.newsEpigraph {
+    padding: 1% 5%;
+    text-align: justify;
+    
+}
+
+
+
+/* -------------- END OF SECTION ------------*/
+
+#FnavBarContainer{
+    background-color: #2c2c2c;
+    padding: 3% 15%;
+}
+
+#FnavBarContainer ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.FnavBarLink{
+    position: relative;
+    padding: 5px;
+    text-decoration: none;
+    color: #FF5733;
+}
+
+#FnavBarContainer a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #FF5733;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  #FnavBarContainer a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+/* -------------- END OF SECTION ------------*/
+
+#footerContainer{
+    background-color: black;
+}
+
+#followUsContainer{
+    text-align: center;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+#followUsTitle {
+    font-size: 26px;
+    padding: 2% 0;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #F3F3F3;
+}
+
+#SocialNetworkLinks {
+    display: flex;
+    justify-content: center;
+}
+
+#SocialNetworkLinks a {
+    color: #F3F3F3;
+    padding: 3%;
+}
+
+#SocialNetworkLinks i {
+    font-size: 95px;
+    text-align: center;
+}
+
+#copyrightContainer{
+    text-align: right;
+    padding: 0 2% 2% 0;
+    color: #B9B9B9;
+    letter-spacing: 1px;
+}
+
+.fa-copyright {
+    padding-right: 5px;
+}
+
+
+
+
+/* -------------- END OF SECTION ------------*/
+
+
+.pageSubtitle{
+    font-size: 22px;
+    padding: 2% 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.proximasFechasSection{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    text-align: center;
+    padding: 2% 20%;
+    row-gap: 10px;
+
+}
+
+.tableHeader{
+    font-size: 20px;
+    font-weight: bold;
+}
+.value{
+    border: 1px solid lightgray;
+    padding: 5px 0;
+}
+
+
+/* -------------- END OF SECTION ------------*/
+
+.formContainer{
+    background-color: #ECECEC;
+    text-align: center;
+    margin: 1% 33% 3% 33%;
+    padding: 3% 6%;
+    border-radius: 40px;
+    border: 2px black solid;
+    box-shadow: 2px 3px darkslategray;
+}
+
+.label{
+    padding: 3% 0;
+    border-radius: 40px;
+}
+
+.campo-texto input {
+    border-radius: 5px;
+    padding: 2% 0;
+    width: 250px;
+}
+
+
+
+.boton button{
+    padding: 2% 3%;
+    margin: 8%;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+
+}
+
+#olvidar-contraseña a {
+    color: black;
+    text-decoration: underline;
+}
+
+.boton :hover{
+    background-color: #FF5733;
+}
+
+
