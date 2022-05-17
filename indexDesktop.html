@@ -17,15 +17,10 @@
 </head>
 
 <body class="gridContainer">
-    <header class="gridSection_header">
-        <div class="headerMainContainer">
-            <div class="burgerMenu"><i class="fa-solid fa-bars"></i></div>
+    <header id="gridSection_header">
+        <div id="headerLeftContainer">
             <h1 id="siteTitle">Gallo Negro</h1>
-            <div class="login-reg-btns">
-                <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                <i class="fa-solid fa-user-plus"></i>
-            </div>
-            <nav class="navBarContainer">
+            <nav id="navBarContainer">
                 <ul>
                     <li><a href="index.html" class="navBarLink">Inicio</a></li>
                     <li><a href="novedades.html" class="navBarLink">Novedades</a></li>
@@ -47,42 +42,40 @@
     </header>
 
     <main>
-        <section class="gridSection_carrousel">
+        <section id="carrousel gridSection_carrousel">
             <img class="mainImage" src="/img/photoDJ.jpg" alt="img">
         </section>
 
-        <section class="gridSection_carrousel_mobile">
-            <img class="mainImage" src="/img/photoDJ_mobile.jpg" alt="img">
-        </section>
-
-        <section class="gridSection_registration">
+        <section id="registration gridSection_registration">
             <p class="regSectionTitle">¿PRIMERA VEZ EN GALLO NEGRO?</p>
             <div id="reg_flexbox">
                 <p class="text">CREA TU CUENTA AHORA Y EMPIEZA A FORMAR PARTE DE LA MAYOR COMUNIDAD DE FREESTYLER DE
                     INTERNET </p>
-                <div class="regButton"> 
-                    <a href="register.html">CREAR CUENTA GRATIS</a>
+                <div class="regButton"> <a href="register.html">CREAR CUENTA GRATIS</a>
                 </div>
             </div>
         </section>
 
-        <section class="gridSection_favs">
-            <h2 class="favSectionTitle">FAVORITOS DEL MES</h2>
+        <section id="gridSection_favs">
+            <h2 class="favSectionTitle">Favoritos del Mes</h2>
             <div class="videosContainer">
                 <div class="videoSection">
-                    <iframe src="https://www.youtube.com/embed/J5glxYqYiKU" title="YouTube video player" frameborder="0"
+                    <iframe width="392" height="221" src="https://www.youtube.com/embed/J5glxYqYiKU"
+                        title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="epigraph">PAPO VS MECHA | #FMSARGENTINA 2022 - Jornada 2 | Urban Roosters</p>
                 </div>
                 <div class="videoSection">
-                    <iframe src="https://www.youtube.com/embed/8mwx5CBqgZM" title="YouTube video player" frameborder="0"
+                    <iframe width="392" height="221" src="https://www.youtube.com/embed/8mwx5CBqgZM"
+                        title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="epigraph">GOD LEVEL MADRID - LO MÁS DESTACADO</p>
                 </div>
                 <div class="videoSection">
-                    <iframe src="https://www.youtube.com/embed/o1llRrltJoI" title="YouTube video player" frameborder="0"
+                    <iframe width="392" height="221" src="https://www.youtube.com/embed/o1llRrltJoI"
+                        title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="epigraph">GOD LEVEL - CHUTY Y MARITHEA VS KLAN Y MNAK - SANTIAGO DE CHILE - OCTAVOS DE
@@ -90,21 +83,24 @@
                 </div>
 
                 <div class="videoSection">
-                    <iframe src="https://www.youtube.com/embed/cQyKLffhejU" title="YouTube video player" frameborder="0"
+                    <iframe width="392" height="221" src="https://www.youtube.com/embed/cQyKLffhejU"
+                        title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="epigraph">¡REPLIK REVIENTA COMBATE FREESTYLE! (vs MECHA, MP, STICK, RAPDER, META y BASEK)
                     </p>
                 </div>
                 <div class="videoSection">
-                    <iframe src="https://www.youtube.com/embed/JC06nS_KSyw" title="YouTube video player" frameborder="0"
+                    <iframe width="392" height="221" src="https://www.youtube.com/embed/JC06nS_KSyw"
+                        title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="epigraph">¡DANI HACE MAGIA! ¡JAFF Y COBE CAMPEONES! vs TIAGO, NACHO, ZAINA, G5, CATRIEL -
                         DEM BATTLES</p>
                 </div>
                 <div class="videoSection">
-                    <iframe src="https://www.youtube.com/embed/NBKLdR_DOlM" title="YouTube video player" frameborder="0"
+                    <iframe width="392" height="221" src="https://www.youtube.com/embed/NBKLdR_DOlM"
+                        title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="epigraph">LOKILLO DERRUMBANDO TITANES! - Reacción a Chuty y Marithea vs Lokillo y Letra -
@@ -113,60 +109,74 @@
             </div>
         </section>
 
-        <section class="gridSection_news">
-            <h2 id="newsSectionTitle">NOVEDADES</h2>
+        <section class="newsSection gridSection_news">
+            <h2 id="newsSectionTitle">Novedades</h2>
             <div class="news_flexbox">
                 <article class="newsPiece">
                     <a href="#">
                         <img class="newsPics" src="/img/FMS_2.jpg" alt="FMS">
                         <p class="newsEpigraph"> FMS Argentina 2022: participantes, jurado, host, formato y novedades de
-                            las batallas de gallos</p>
+                            las
+                            batallas de gallos</p>
                     </a>
                 </article>
-
-                <article class="newsPiece">
-                    <a href="#">
-                        <img class="newsPics" src="/img/chuty.jpg" alt="chuty">
-                        <p class="newsEpigraph">God Level All Stars 2vs2: Nekroos-Skone ganaron la fecha en España;
-                            Marithea-Chuty son los campeones del torneo </p>
-                    </a>
-                </article>
-
-                <article class="newsPiece">
-                    <a href="#">
-                        <img class="newsPics" src="/img/Aczino.jpg" alt="aczino">
-                        <p class="newsEpigraph">¡Aczino estará en FMS Argentina!</p>
-                    </a>
-                </article>
+                <article class="newsPiece"><img class="newsPics" src="/img/chuty.jpg" alt="chuty"><a href="#">God Level
+                        All
+                        Stars 2vs2: Nekroos-Skone ganaron la fecha en España; Marithea-Chuty son los campeones del
+                        torneo</a></article>
+                <article class="newsPiece"><img class="newsPics" src="/img/aczino.jfif" alt="aczino"><a href="#">¡Aczino
+                        estará en FMS Argentina!</a></article>
                 <article class="newsPiece">
                     <a href="#">
                         <img class="newsPics" src="/img/FMS_2.jpg" alt="FMS">
                         <p class="newsEpigraph"> FMS Argentina 2022: participantes, jurado, host, formato y novedades de
-                            las batallas de gallos</p>
+                            las
+                            batallas de gallos</p>
                     </a>
                 </article>
-
+                <article class="newsPiece"><img class="newsPics" src="/img/chuty.jpg" alt="chuty"><a href="#">God Level
+                        All
+                        Stars 2vs2: Nekroos-Skone ganaron la fecha en España; Marithea-Chuty son los campeones del
+                        torneo</a></article>
+                <article class="newsPiece"><img class="newsPics" src="/img/aczino.jfif" alt="aczino"><a href="#">¡Aczino
+                        estará en FMS Argentina!</a></article>
                 <article class="newsPiece">
                     <a href="#">
-                        <img class="newsPics" src="/img/chuty.jpg" alt="chuty">
-                        <p class="newsEpigraph">God Level All Stars 2vs2: Nekroos-Skone ganaron la fecha en España;
-                            Marithea-Chuty son los campeones del torneo </p>
+                        <img class="newsPics" src="/img/FMS_2.jpg" alt="FMS">
+                        <p class="newsEpigraph"> FMS Argentina 2022: participantes, jurado, host, formato y novedades de
+                            las
+                            batallas de gallos</p>
                     </a>
                 </article>
-
+                <article class="newsPiece"><img class="newsPics" src="/img/chuty.jpg" alt="chuty"><a href="#">God Level
+                        All
+                        Stars 2vs2: Nekroos-Skone ganaron la fecha en España; Marithea-Chuty son los campeones del
+                        torneo</a></article>
+                <article class="newsPiece"><img class="newsPics" src="/img/aczino.jfif" alt="aczino"><a href="#">¡Aczino
+                        estará en FMS Argentina!</a></article>
                 <article class="newsPiece">
                     <a href="#">
-                        <img class="newsPics" src="/img/Aczino.jpg" alt="aczino">
-                        <p class="newsEpigraph">¡Aczino estará en FMS Argentina!</p>
+                        <img class="newsPics" src="/img/FMS_2.jpg" alt="FMS">
+                        <p class="newsEpigraph"> FMS Argentina 2022: participantes, jurado, host, formato y novedades de
+                            las
+                            batallas de gallos</p>
                     </a>
                 </article>
+                <article class="newsPiece"><img class="newsPics" src="/img/chuty.jpg" alt="chuty"><a href="#">God Level
+                        All
+                        Stars 2vs2: Nekroos-Skone ganaron la fecha en España; Marithea-Chuty son los campeones del
+                        torneo</a></article>
+                <article class="newsPiece"><img class="newsPics" src="/img/aczino.jfif" alt="aczino"><a href="#">¡Aczino
+                        estará en FMS Argentina!</a></article>
+
+
             </div>
         </section>
 
     </main>
 
-    <footer class="gridSection_footer">
-        <div id="footerNavBar">
+    <footer id="gridSection_footer">
+        <section id="footerNavBar">
             <nav id="FnavBarContainer">
                 <ul>
                     <li><a href="index.html" class="FnavBarLink">Inicio</a></li>
@@ -175,9 +185,9 @@
                     <li><a href="proximasFechas.html" class="FnavBarLink">Próximas Fechas</a></li>
                 </ul>
             </nav>
-        </div>
+        </section>
 
-        <div id="footerContainer">
+        <section id="footerContainer">
 
             <div id="followUsContainer">
                 <h3 id="followUsTitle">SEGUINOS TAMBIÉN AQUÍ</h3>
@@ -190,14 +200,10 @@
 
             </div>
 
-            <div class="dancerAnimacion">
-                <img class="dancer_img" src="/img/dance3.png" alt="">
-            </div>
-
             <div id="copyrightContainer">
                 <p> <i class="fa-solid fa-copyright"> </i> Copyright Gallo Negro 2022</p>
             </div>
-        </div>
+        </section>
     </footer>
 </body>
 

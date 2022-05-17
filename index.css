@@ -1,3 +1,5 @@
+/* -------------- AJUSTES GENERALES ------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,108 +11,95 @@ a {
     text-decoration: none;
 }
 
-header{
+/* -------------- CONFIGURACION GRIDS ------------*/
+
+.gridContainer {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "carrousel"
+        "registration"
+        "gridSection_favs"
+        "news"
+        "footer";
+    grid-template-columns: 100vw;
+}
+
+.gridSection_header {
+    grid-area: header;
+}
+
+.gridSection_carrousel {
+    grid-area: carrousel;
+}
+
+.gridSection_carrousel_mobile {
+    grid-area: carrousel;
+}
+
+.gridSection_registration {
+    grid-area: registration;
+}
+
+.gridSection_favs {
+    grid-area: gridSection_favs;
+}
+
+.gridSection_news {
+    grid-area: news;
+}
+
+.gridSection_footer {
+    grid-area: footer;
+}
+
+
+/* -------------- HEADER ------------*/
+
+header {
     background-color: black;
     color: white;
-    border-bottom: #FF5733 1px solid;
-}
-#headerLeftContainer{
-    width: 60%;
-}
-
-#siteTitle{
-    padding: 2% 0 3% 5%;
-    font-family: 'Unica One', cursive;
-    font-size: 48px;
+    border-bottom: #FF5733 2px solid;
 }
 
 
-.navBarLink {
-    text-decoration: none;
-    color: white;
-    
-}
-
-#navBarContainer a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #FF5733;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-
-  #navBarContainer a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
-
-#navBarContainer a {
-   color: white;
-   position: relative;
-   padding: 5px;
-}
-
-#navBarContainer ul {
+.headerMainContainer {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0 10% 0 5%;
-    list-style: none;
-    justify-content: space-around;
-    padding-bottom: 3%;
-    padding-left: 25%;
- }
-
-/* -------------- END OF SECTION ------------*/
-
-
-#headerRightContainer{
-    position:absolute;
-    top: 3%;
-    right: 2%;
-    min-width: 220px;
-    text-align: right;
-}
-
-#loginButtons {
-    padding: 8% 0 11% 0;
-
-}
-
-#loginButtons a {
-    color: white;
     position: relative;
-    padding-bottom: 5px;
-
 }
 
-#loginButtons a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
+#siteTitle {
+    padding: 2% 0 3% 0;
+    font-family: 'Unica One', cursive;
+    font-size: 2rem;
+    width: 180px;
+}
+
+.burgerMenu {
+    padding: 3%;
+    font-size: 1.5rem;
+}
+
+
+.login-reg-btns {
+    width: 18%;
     position: absolute;
-    background: #FF5733;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-
-  #loginButtons a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
-
-.RegBtn{
-    margin-left: 15%;
-    margin-right: 4%;
+    top: 22%;
+    right: 3%;
 }
+
+.fa-solid {
+    padding: 3% 10% 0 0;
+}
+
+.navBarContainer {
+    display: none;
+}
+
+#headerRightContainer {
+    display: none;
+}
+
 
 ::-webkit-input-placeholder {
     font-weight: bold;
@@ -118,199 +107,172 @@ header{
 }
 
 
-/* -------------- END OF SECTION ------------*/
+/* -------------- IMAGEN PRINCIPAL INICIO ------------*/
 
-#carrousel{
-    text-align:center;
+.gridSection_carrousel {
+    display: none;
+}
+
+.gridSection_carrousel_mobile {
+    text-align: center;
     background-color: #2c2c2c;
 }
 
-.mainImage{
+.mainImage {
     width: 100%;
 }
 
-/* -------------- END OF SECTION ------------*/
+/* -------------- SECCION INVITACION A REGISTRARSE ------------*/
 
-#registration{
-    width: 50%;
+.gridSection_registration {
     text-align: center;
     padding: 3% 0;
-    position: relative;
 }
 
-.regSectionTitle{
-    font-size: 23px;
-    padding: 5%;
+.regSectionTitle {
+    font-size: 25px;
+    padding: 3% 0;
     color: black;
-    letter-spacing: 1.2px;
+    font-family: 'Unica One', cursive;
+}
+
+#reg_flexbox {
+    padding-bottom: 3%;
 }
 
 .text {
-    font-size: 15px;
-    padding: 0 8% 5% 8%;
+    font-size: 13px;
+    padding: 1% 7% 1% 4%;
     letter-spacing: 1px;
-    
+
 }
 
-.regButton a{
+.regButton a {
     text-decoration: none;
-    color: white;
-    letter-spacing: 1px;
+    color: black;
 }
 
-.regButton{
-    background-color: black;
-    position: absolute;
-    top: 35%;
-    left: 140%;
-    width: 150px;
-    padding: 2%;
-    border-radius: 45px;
-}
-
-.regButton:hover {
-    transition: 0.2s;
+.regButton {
     background-color: #FA3E2F;
+    width: 150px;
+    height: 45px;
+    padding: 3% 5%;
+    border-radius: 45px;
+    margin-left: 35%;
+    margin-top: 7%;
 }
 
-/* -------------- END OF SECTION ------------*/
+/* -------------- SECCION VIDEOS FAVORITOS ------------*/
 
-#favs{
+.gridSection_favs {
     background-color: #2c2c2c;
     text-align: center;
+    background-image: linear-gradient(to right, #2c2c2c, rgba(255, 255, 255, 0.79));
 }
 
 
-.favSectionTitle{
+.favSectionTitle {
     color: white;
-    font-size: 36px;
-    padding: 2% 0;
+    font-size: 28px;
+    padding: 12% 0 18% 0;
     letter-spacing: 2px;
+    font-family: 'Unica One', cursive;
 }
 
-.videosContainer{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+.videoSection {
+    padding-bottom: 12%;
+
 }
 
-.videoSection{
-    padding-bottom:4%;
-    width: 33%;
-}
-
-.epigraph{
+.epigraph {
     color: white;
-    font-size: 15px;
-    padding: 3% 15%;
+    font-size: 18px;
+    padding: 3% 9%;
     letter-spacing: 1px;
 }
 
-/* -------------- END OF SECTION ------------*/
+/* -------------- SECCION NOVEDADES ------------*/
 
-.newsSection{
+.gridSection_news {
     padding: 2% 0 5% 0;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(223, 86, 86, 0.79), #555555);
 }
 
-.pageTitle{
-    font-size: 36px;
-    padding: 2% 0;
+#newsSectionTitle {
+    font-size: 28px;
+    padding: 8% 0 8% 5%;
     letter-spacing: 2px;
-    text-align: center;
+    font-family: 'Unica One', cursive;
 }
 
-.newsArticles{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+
+article {
+    padding: 2% 2% 5% 7%;
 }
 
-article{
-    width: 22%;
-    padding: 2% 2% 5% 0;
-    text-align: center;
-}
-
-.leerLink a{
+.leerLink a {
     color: black;
-    
+
 }
 
-.leerLink{
+.leerLink {
     text-align: right;
     padding-right: 8%;
 }
 
-.leerLink a:hover{
-    color: #FA3E2F;
-}
-
-.newsPics{
-    max-width: 250px;
+.newsPics {
+    max-width: 90%;
 }
 
 .newsEpigraph {
     padding: 1% 5%;
-    text-align: justify;
-    
+    text-align: center;
+    color: black;
 }
 
 
 
-/* -------------- END OF SECTION ------------*/
+/* -------------- ENLACES PRE FOOTER ------------*/
 
-#FnavBarContainer{
+#FnavBarContainer {
     background-color: #2c2c2c;
     padding: 3% 15%;
 }
 
-#FnavBarContainer ul{
-    display: flex;
+#FnavBarContainer ul {
     list-style: none;
-    justify-content: space-around;
+    text-align: center;
+    padding: 5% 0;
+
 }
 
-.FnavBarLink{
-    position: relative;
-    padding: 5px;
-    text-decoration: none;
-    color: #FF5733;
+#FnavBarContainer a {
+    color: lightgrey;
+    padding-bottom: 5%;
 }
 
-#FnavBarContainer a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #FF5733;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-
-  #FnavBarContainer a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
+#FnavBarContainer li {
+    padding-bottom: 5%;
+}
 
 
-/* -------------- END OF SECTION ------------*/
 
-#footerContainer{
+/* -------------- FOOTER ------------*/
+
+#footerContainer {
     background-color: black;
 }
 
-#followUsContainer{
+#followUsContainer {
     text-align: center;
     padding-bottom: 2%;
     padding-top: 2%;
 }
 
 #followUsTitle {
-    font-size: 26px;
-    padding: 2% 0;
+    font-size: 16px;
+    padding: 6% 0;
     letter-spacing: 2px;
     text-align: center;
     color: #F3F3F3;
@@ -326,16 +288,21 @@ article{
     padding: 3%;
 }
 
+.dancerAnimacion {
+    display: none;
+}
+
 #SocialNetworkLinks i {
-    font-size: 95px;
+    font-size: 35px;
     text-align: center;
 }
 
-#copyrightContainer{
+#copyrightContainer {
     text-align: right;
-    padding: 0 2% 2% 0;
+    padding: 6% 2% 2% 0;
     color: #B9B9B9;
     letter-spacing: 1px;
+    font-size: 11px;
 }
 
 .fa-copyright {
@@ -345,17 +312,97 @@ article{
 
 
 
-/* -------------- END OF SECTION ------------*/
+/* ---- AJUSTES GENERALES DE PAGINAS SECUNDARIAS ----*/
 
 
-.pageSubtitle{
+.pageTitle {
+    font-size: 36px;
+    padding: 5% 0;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Unica One', cursive;
+}
+
+.pageSubtitle {
     font-size: 22px;
     padding: 2% 0;
     letter-spacing: 2px;
     text-align: center;
+    color: #FF5733;
 }
 
-.proximasFechasSection{
+
+/* -------------- PAGINA NOVEDADES ------------*/
+
+.gridNews {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "newsArticles_FMS twitterAside"
+        "newsArticles_GODLEVEL twitterAside"
+        "footer footer";
+    grid-column-gap: 50px;
+    padding-bottom: 50px;
+    grid-template-columns: 65vw 25vw;
+
+}
+
+.newsArticles_FMS {
+    grid-area: newsArticles_FMS;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.newsArticles_GODLEVEL {
+    grid-area: newsArticles_GODLEVEL;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.newsPageFlexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.newsPiece {
+    margin: 2%;
+}
+
+
+.leerLink_newsPage a {
+    color: white;
+    text-decoration: underline;
+}
+
+.leerLink_newsPage {
+    text-align: right;
+    padding-right: 8%;
+}
+
+.leerLink_newsPage a:hover {
+    color: #FA3E2F;
+}
+
+
+.twitterAside {
+    grid-area: twitterAside;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+
+
+
+/* -------------- PÁGINA PRÓXIMAS FECHAS ------------*/
+
+.proximasFechasSection {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr;
     text-align: center;
@@ -364,19 +411,20 @@ article{
 
 }
 
-.tableHeader{
+.tableHeader {
     font-size: 20px;
     font-weight: bold;
 }
-.value{
+
+.value {
     border: 1px solid lightgray;
     padding: 5px 0;
 }
 
 
-/* -------------- END OF SECTION ------------*/
+/* -------------- PAGINA LOGIN ------------*/
 
-.formContainer{
+.formContainer {
     background-color: #ECECEC;
     text-align: center;
     margin: 1% 33% 3% 33%;
@@ -386,7 +434,7 @@ article{
     box-shadow: 2px 3px darkslategray;
 }
 
-.label{
+.label {
     padding: 3% 0;
     border-radius: 40px;
 }
@@ -399,7 +447,7 @@ article{
 
 
 
-.boton button{
+.boton button {
     padding: 2% 3%;
     margin: 8%;
     border-radius: 15px;
@@ -414,8 +462,430 @@ article{
     text-decoration: underline;
 }
 
-.boton :hover{
+.boton :hover {
     background-color: #FF5733;
 }
 
+/* -------------- PAGINA MEJORES MINUTOS ------------*/
 
+.videoSection_Container {
+    background-color: black;
+}
+
+/* -------------- MEDIA QUERIES ------------*/
+
+
+/* -------------- MOBILE INTERMEDIO ------------*/
+@media screen and (min-width: 500px) {
+
+    /* -------------- HEADER ------------*/
+
+    #siteTitle {
+        font-size: 40px;
+        width: 50%;
+    }
+
+    .login-reg-btns {
+        width: 28%;
+        position: absolute;
+        top: 22%;
+        right: 1%;
+    }
+
+    .login-reg-btns .fa-solid {
+        padding: 3% 10% 0 0;
+        font-size: 30px;
+    }
+
+
+    /*--------------- FAVORITOS DEL MES -------------*/
+
+    .favSectionTitle {
+        font-size: 36px;
+        padding: 8% 0 8% 0;
+    }
+
+    .videoSection {
+        padding: 0 5% 0 0;
+        width: 40%;
+
+    }
+
+    .videosContainer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+    }
+
+    iframe{
+        max-width: 40vw;
+    }
+
+    /*--------------- NOVEDADES -------------*/
+
+    #newsSectionTitle {
+        font-size: 36px;
+        padding: 7% 3% 5% 0;
+    }
+
+    .newsEpigraph{
+        font-size: 22px;
+    }
+
+    article{
+        padding: 0 5% 3% 0;
+    }
+
+}
+
+/* -------------- TABLET ------------*/
+@media screen and (min-width: 768px) {
+
+    /* -------------- SECCION NOVEDADES ------------*/
+
+
+    .news_flexbox{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+
+    .newsPiece{
+        width: 40vw;
+    }
+
+    /* -------------- ENLACES PRE FOOTER ------------*/
+
+    #FnavBarContainer ul {
+        padding: 5% 0 3% 5%;
+
+    }
+
+    #FnavBarContainer li {
+        padding-bottom: 5%;
+    }
+
+    /* -------------- SECCION FOOTER ------------*/
+
+    #followUsContainer {
+        padding: 0 0 3% 4%;
+    }
+
+}
+
+/* -------------- DESKTOP ------------*/
+@media screen and (min-width: 1260px) {
+
+    /* -------------- HEADER ------------*/
+    .burgerMenu {
+        display: none;
+    }
+
+    .login-reg-btns {
+        display: none;
+    }
+
+    #siteTitle {
+        padding-left: 5%;
+        width: auto;
+        font-size: 48px;
+    }
+
+    .navBarContainer {
+        display: block;
+    }
+
+    .navBarLink {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .navBarContainer a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #FF5733;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    .navBarContainer a:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    .navBarContainer a {
+        color: white;
+        position: relative;
+        padding: 5px;
+        margin-right: 20px;
+    }
+
+    .navBarContainer ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 15% 10% 0 5%;
+        list-style: none;
+        justify-content: space-around;
+        padding-bottom: 3%;
+        padding-left: 25%;
+    }
+
+
+    .headerMainContainer {
+        width: 60%;
+    }
+
+    #headerRightContainer {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 2%;
+        min-width: 220px;
+        text-align: right;
+    }
+
+    #loginButtons {
+        padding: 8% 0 11% 0;
+
+    }
+
+    #loginButtons a {
+        color: white;
+        position: relative;
+        padding-bottom: 5px;
+
+    }
+
+    #loginButtons a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #FF5733;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    #loginButtons a:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    .RegBtn {
+        margin-left: 15%;
+        margin-right: 0;
+    }
+
+
+    /* -------------- IMAGEN PRINCIPAL INICIO ------------*/
+
+    .gridSection_carrousel {
+        display: block;
+    }
+
+    .gridSection_carrousel_mobile {
+        display: none;
+    }
+
+    .mainImage {
+        max-width: 100vw;
+    }
+
+
+    /* -------------- SECCION INVITACION A REGISTRARSE ------------*/
+
+    .gridSection_registration { 
+        padding: 0;
+    }
+
+    .regSectionTitle {
+        font-size: 26px;
+        letter-spacing: 1.2px;
+        padding: 2% 0 0 0;
+    }
+
+    #reg_flexbox {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .text {
+        font-size: 18px;
+        padding: 3% 8% 5% 8%;
+        width: 50%;
+        text-align: center;
+
+    }
+
+    .regButton a {
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    .regButton {
+        background-color: black;
+        position: relative;
+        left: 4%;
+        padding: 1.5%;
+        margin: 2% 0 0 0;
+        text-align: center;
+    }
+
+    .regButton:hover {
+        transition: 0.2s;
+        background-color: #FA3E2F;
+    }
+
+    /* -------------- SECCION VIDEOS FAVORITOS ------------*/
+
+    .favSectionTitle {
+        font-size: 33px;
+        padding: 4% 0 5% 0;
+    }
+
+    .videosContainer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .videoSection {
+        padding-bottom: 4%;
+        width: 33%;
+    }
+
+    .epigraph {
+        font-size: 15px;
+        padding: 3% 15%;
+        letter-spacing: 1px;
+    }
+
+    /* -------------- SECCION NOVEDADES ------------*/
+
+    .gridSection_news {
+        padding: 0;
+    }
+
+    #newsSectionTitle {
+        font-size: 33px;
+        padding: 4% 0 5% 0;
+    }
+
+    .news_flexbox {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+
+    article {
+        width: 22%;
+        padding: 2% 2% 5% 0;
+    }
+
+    .newsPics {
+        max-width: 20vw;
+    }
+
+
+    /* -------------- ENLACES PRE FOOTER ------------*/
+
+    #FnavBarContainer ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+
+    }
+
+    .FnavBarLink {
+        position: relative;
+        padding: 5px;
+        text-decoration: none;
+        color: #FF5733;
+    }
+
+    #FnavBarContainer a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #FF5733;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    #FnavBarContainer a:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    #FnavBarContainer a {
+        padding: 5px;
+    }
+
+    #FnavBarContainer li {
+        padding-bottom: 0;
+    }
+
+
+    /* -------------- FOOTER ------------*/
+
+    #followUsTitle {
+        font-size: 20px;
+        padding: 6% 0 4% 0;
+    }
+
+    #SocialNetworkLinks i {
+        font-size: 95px;
+    }
+
+    .dancer_img {
+        max-height: 150px;
+    }
+
+    .dancerAnimacion {
+        display: block;
+        width: 180px;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        animation-name: giro;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 7s;
+        animation-delay: 5s;
+
+    }
+
+    @keyframes giro {
+        0% {
+            transform: rotate3d(0, 1, 0, 360deg)
+        }
+
+        40% {
+            transform: rotate3d(0, 0, 0, 0)
+        }
+
+        100% {
+            transform: rotate3d(0, 0, 0, 0)
+        }
+    }
+
+    #copyrightContainer {
+        padding: 0 2% 2% 0;
+        font-size: 14px;
+    }
+}

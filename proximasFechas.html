@@ -5,37 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallo Negro - Próximas Fechas</title>
-    <link rel="stylesheet" href="index.css">
-
+    <title>Gallo Negro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Montserrat:wght@100&family=Quicksand:wght@300&family=Unica+One&display=swap"
         rel="stylesheet">
-
     <script src="https://kit.fontawesome.com/3a20aadc82.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
 
 </head>
 
-<body>
-    <header>
-        <div id="headerLeftContainer">
+<body class="gridContainer">
+    <header class="gridSection_header">
+        <div class="headerMainContainer">
+            <div class="burgerMenu"><i class="fa-solid fa-bars"></i></div>
             <h1 id="siteTitle">Gallo Negro</h1>
-            <nav id="navBarContainer">
+            <div class="login-reg-btns">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <i class="fa-solid fa-user-plus"></i>
+            </div>
+            <nav class="navBarContainer">
                 <ul>
-                    <li><a href="/html/index.html" class="navBarLink">Inicio</a></li>
-                    <li><a href="/html/novedades.html" class="navBarLink">Novedades</a></li>
-                    <li><a href="/html/mejoresMinutos.html" class="navBarLink">Mejores Minutos</a></li>
-                    <li><a href="/html/proximasFechas.html"class="navBarLink">Próximas Fechas</a></li>
-                    <li><a href="/html/foro.html" class="navBarLink">Foro</a></li>
+                    <li><a href="index.html" class="navBarLink">Inicio</a></li>
+                    <li><a href="novedades.html" class="navBarLink">Novedades</a></li>
+                    <li><a href="mejoresMinutos.html" class="navBarLink">Mejores Minutos</a></li>
+                    <li><a href="proximasFechas.html" class="navBarLink">Próximas Fechas</a></li>
                 </ul>
             </nav>
         </div>
         <div id="headerRightContainer">
             <div id="loginButtons">
-                <a href="/html/login.html" class="LogInBtn">Ingresá</a>
-                <a href="/html/register.html" class="RegBtn">Registrate</a>
+                <a href="login.html" class="LogInBtn">Ingresá</a>
+                <a href="register.html" class="RegBtn">Registrate</a>
             </div>
             <div class="searchBar">
                 <input style="margin-left:5%; width: 210px; height: 25px;" type="text" placeholder="Buscar...">
@@ -134,20 +136,19 @@
 
     </main>
 
-    <footer>
-        <section id="footerNavBar">
+    <footer id="gridSection_footer">
+        <div id="footerNavBar">
             <nav id="FnavBarContainer">
                 <ul>
-                    <li><a href="/html/index.html" class="FnavBarLink">Inicio</a></li>
-                    <li><a href="/html/novedades.html" class="FnavBarLink">Novedades</a></li>
-                    <li><a href="/html/mejoresMinutos.html" class="FnavBarLink">Mejores Minutos</a></li>
-                    <li><a href="/html/proximasFechas.html" class="FnavBarLink">Próximas Fechas</a></li>
-                    <li><a href="/html/foro.html" class="FnavBarLink">Foro</a></li>
+                    <li><a href="index.html" class="FnavBarLink">Inicio</a></li>
+                    <li><a href="novedades.html" class="FnavBarLink">Novedades</a></li>
+                    <li><a href="mejoresMinutos.html" class="FnavBarLink">Mejores Minutos</a></li>
+                    <li><a href="proximasFechas.html" class="FnavBarLink">Próximas Fechas</a></li>
                 </ul>
             </nav>
-        </section>
-        
-        <section id="footerContainer">
+        </div>
+
+        <div id="footerContainer">
 
             <div id="followUsContainer">
                 <h3 id="followUsTitle">SEGUINOS TAMBIÉN AQUÍ</h3>
@@ -163,9 +164,8 @@
             <div id="copyrightContainer">
                 <p> <i class="fa-solid fa-copyright"> </i> Copyright Gallo Negro 2022</p>
             </div>
-        </section>
+        </div>
     </footer>
-
 </body>
 
 </html>
