@@ -1,111 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallo Negro</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Montserrat:wght@100&family=Quicksand:wght@300&family=Unica+One&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3a20aadc82.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallo Negro</title>
+    
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Montserrat:wght@100&family=Quicksand:wght@300&family=Unica+One&display=swap"
+            rel="stylesheet">
+    
+        <!-- FONTAWSOME -->
+        <script src="https://kit.fontawesome.com/3a20aadc82.js" crossorigin="anonymous"></script>
+    
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="index.css">
+    
+    </head>
 
-</head>
+<body>
 
-<body class="gridContainer">
-    <header class="gridSection_header">
-        <div class="headerMainContainer">
-            <div class="burgerMenu"><i class="fa-solid fa-bars"></i></div>
-            <h1 id="siteTitle">Gallo Negro</h1>
-            <div class="login-reg-btns">
-                <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                <i class="fa-solid fa-user-plus"></i>
-            </div>
-            <nav class="navBarContainer">
-                <ul>
-                    <li><a href="index.html" class="navBarLink">Inicio</a></li>
-                    <li><a href="novedades.html" class="navBarLink">Novedades</a></li>
-                    <li><a href="mejoresMinutos.html" class="navBarLink">Mejores Minutos</a></li>
-                    <li><a href="proximasFechas.html" class="navBarLink">Próximas Fechas</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div id="headerRightContainer">
-            <div id="loginButtons">
-                <a href="login.html" class="LogInBtn">Ingresá</a>
-                <a href="register.html" class="RegBtn">Registrate</a>
-            </div>
-            <div class="searchBar">
-                <input style="margin-left:5%; width: 210px; height: 25px;" type="text" placeholder="Buscar...">
-            </div>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand siteTitle" href="index.html">Gallo Negro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navBarContainer">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="novedades.html">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mejoresMinutos.html">Mejores Minutos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="proximasFechas.html">Próximas Fechas</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Usuarios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="login.html">Ingresa a tu cuenta</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="register.html">Registrate aquí</a></li>
 
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Escribe aquí" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
+    <main class="main_newsPage">
         <section>
-            <h2 class="pageTitle">Novedades</h2>
+            <h2 class="pageTitle" id="h2_newsTitle">Novedades</h2>
             <div class="gridNews">
                 <div class="newsArticles_FMS">
-                    <h3 class="pageSubtitle">TODO SOBRE LA ULTIMA FMS ARGENTINA</h3>
+                    <h3 class="pageSubtitle newsSubtitle">TODO SOBRE LA ULTIMA FMS ARGENTINA</h3>
                     <div class="newsPageFlexbox">
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/FMS_2.jpg" alt="FMS">
+                        <article class="newsPiece_newsPage">
+                            <img class="newsPics_newsPage" src="img/FMS_2.jpg" alt="FMS">
                             <p class="newsPageEpigraph"> FMS Argentina 2022: participantes, jurado, host, formato y
                                 novedades de
                                 las batallas de gallos</p>
                             <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
                         </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/chuty.jpg" alt="chuty">
+                        <article class="newsPiece_newsPage">
+                            <img class="newsPics_newsPage" src="img/chuty.jpg" alt="chuty">
                             <p class="newsPageEpigraph"> God Level All Stars 2vs2: Nekroos-Skone ganaron la fecha en España;
                                 Marithea-Chuty
                                 son los campeones del torneo</p>
                             <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
                         </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/aczino.jfif" alt="aczino">
+                        <article class="newsPiece_newsPage">
+                            <img class="newsPics_newsPage" src="img/Aczino.jpg" alt="aczino">
                             <p class="newsPageEpigraph">¡Aczino estará en FMS Argentina!</p>
                             <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
                         </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/FMS_2.jpg" alt="FMS">
+                        <article class="newsPiece_newsPage">
+                            <img class="newsPics_newsPage" src="img/FMS_2.jpg" alt="FMS">
                             <p class="newsPageEpigraph"> FMS Argentina 2022: participantes, jurado, host, formato y
                                 novedades de
                                 las batallas de gallos</p>
-                            <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
-                        </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/chuty.jpg" alt="chuty">
-                            <p class="newsPageEpigraph"> God Level All Stars 2vs2: Nekroos-Skone ganaron la fecha en España; Marithea-Chuty
-                                son los campeones del torneo</p>
-                            <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
-                        </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/aczino.jfif" alt="aczino">
-                            <p class="newsPageEpigraph">¡Aczino estará en FMS Argentina!</p>
-                            <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
-                        </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/FMS_2.jpg" alt="FMS">
-                            <p class="newsPageEpigraph"> FMS Argentina 2022: participantes, jurado, host, formato y
-                                novedades de
-                                las batallas de gallos</p>
-                            <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
-                        </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/chuty.jpg" alt="chuty">
-                            <p class="newsPageEpigraph"> God Level All Stars 2vs2: Nekroos-Skone ganaron la fecha en España; Marithea-Chuty
-                                son los campeones del torneo</p>
-                            <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
-                        </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/aczino.jfif" alt="aczino">
-                            <p class="newsPageEpigraph">¡Aczino estará en FMS Argentina!</p>
                             <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
                         </article>
                     </div>
@@ -113,61 +117,32 @@
                 </div>
 
                 <div class="newsArticles_GODLEVEL">
-                    <h3 class="pageSubtitle">TERMINÓ LA GOD LEVEL!! LEE TODO AQUÍ >> </h3>
+                    <h3 class="pageSubtitle newsSubtitle">TERMINÓ LA GOD LEVEL!! LEE TODO AQUÍ >> </h3>
                     <div class="newsPageFlexbox">
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/FMS_2.jpg" alt="FMS">
+                        <article class="newsPiece_newsPage">
+                            <img class="newsPics_newsPage" src="img/FMS_2.jpg" alt="FMS">
                             <p class="newsPageEpigraph"> FMS Argentina 2022: participantes, jurado, host, formato y
                                 novedades de
                                 las batallas de gallos</p>
                             <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
                         </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/chuty.jpg" alt="chuty">
+                        <article class="newsPiece_newsPage">
+                            <img class="newsPics_newsPage" src="img/chuty.jpg" alt="chuty">
                             <p class="newsPageEpigraph"> God Level All Stars 2vs2: Nekroos-Skone ganaron la fecha en España;
                                 Marithea-Chuty
                                 son los campeones del torneo</p>
                             <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
                         </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/aczino.jfif" alt="aczino">
+                        <article class="newsPiece_newsPage">
+                            <img class="newsPics_newsPage" src="img/Aczino.jpg" alt="aczino">
                             <p class="newsPageEpigraph">¡Aczino estará en FMS Argentina!</p>
                             <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
                         </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/FMS_2.jpg" alt="FMS">
+                        <article class="newsPiece_newsPage">
+                            <img class="newsPics_newsPage" src="img/FMS_2.jpg" alt="FMS">
                             <p class="newsPageEpigraph"> FMS Argentina 2022: participantes, jurado, host, formato y
                                 novedades de
                                 las batallas de gallos</p>
-                            <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
-                        </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/chuty.jpg" alt="chuty">
-                            <p class="newsPageEpigraph"> God Level All Stars 2vs2: Nekroos-Skone ganaron la fecha en España; Marithea-Chuty
-                                son los campeones del torneo</p>
-                            <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
-                        </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/aczino.jfif" alt="aczino">
-                            <p class="newsPageEpigraph">¡Aczino estará en FMS Argentina!</p>
-                            <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
-                        </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/FMS_2.jpg" alt="FMS">
-                            <p class="newsPageEpigraph"> FMS Argentina 2022: participantes, jurado, host, formato y
-                                novedades de
-                                las batallas de gallos</p>
-                            <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
-                        </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/chuty.jpg" alt="chuty">
-                            <p class="newsPageEpigraph"> God Level All Stars 2vs2: Nekroos-Skone ganaron la fecha en España; Marithea-Chuty
-                                son los campeones del torneo</p>
-                            <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
-                        </article>
-                        <article class="newsPiece">
-                            <img class="newsPics" src="img/aczino.jfif" alt="aczino">
-                            <p class="newsPageEpigraph">¡Aczino estará en FMS Argentina!</p>
                             <div class="leerLink_newsPage"><a href="#">Leer>></a></div>
                         </article>
                     </div>
@@ -175,7 +150,7 @@
                 </div>
 
                 <div class="twitterAside">
-                    <h2>Lo último en twitter</h2>
+                    <h2 class="newsSubtitle h2_aside">Lo último en twitter</h2>
                 </div>
             </div>
 
@@ -216,6 +191,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>

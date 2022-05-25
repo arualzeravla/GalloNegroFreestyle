@@ -11,109 +11,34 @@ a {
     text-decoration: none;
 }
 
-/* -------------- CONFIGURACION GRIDS ------------*/
-
-.gridContainer {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "carrousel"
-        "registration"
-        "gridSection_favs"
-        "news"
-        "footer";
-    grid-template-columns: 100vw;
+body{
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
 }
 
-.gridSection_header {
-    grid-area: header;
-}
-
-.gridSection_carrousel {
-    grid-area: carrousel;
-}
-
-.gridSection_carrousel_mobile {
-    grid-area: carrousel;
-}
-
-.gridSection_registration {
-    grid-area: registration;
-}
-
-.gridSection_favs {
-    grid-area: gridSection_favs;
-}
-
-.gridSection_news {
-    grid-area: news;
-}
-
-.gridSection_footer {
-    grid-area: footer;
-}
-
-
-/* -------------- HEADER ------------*/
+/* -------------- INDEX: HEADER - MOBILE ------------*/
 
 header {
-    background-color: black;
-    color: white;
     border-bottom: #FF5733 2px solid;
 }
 
 
-.headerMainContainer {
-    display: flex;
-    position: relative;
-}
-
-#siteTitle {
-    padding: 2% 0 3% 0;
+.siteTitle {
+    padding: 2% 0 3% 2%;
     font-family: 'Unica One', cursive;
     font-size: 2rem;
     width: 180px;
 }
 
-.burgerMenu {
-    padding: 3%;
-    font-size: 1.5rem;
-}
 
+/* -------------- INDEX: IMAGEN PRINCIPAL - MOBILE ------------*/
 
-.login-reg-btns {
-    width: 18%;
-    position: absolute;
-    top: 22%;
-    right: 3%;
-}
-
-.fa-solid {
-    padding: 3% 10% 0 0;
-}
-
-.navBarContainer {
+.section_welcomeImg {
     display: none;
 }
 
-#headerRightContainer {
-    display: none;
-}
-
-
-::-webkit-input-placeholder {
-    font-weight: bold;
-    padding-left: 5px;
-}
-
-
-/* -------------- IMAGEN PRINCIPAL INICIO ------------*/
-
-.gridSection_carrousel {
-    display: none;
-}
-
-.gridSection_carrousel_mobile {
+.section_welcomeImg_mobile {
     text-align: center;
     background-color: #2c2c2c;
 }
@@ -122,49 +47,43 @@ header {
     width: 100%;
 }
 
-/* -------------- SECCION INVITACION A REGISTRARSE ------------*/
+/* -------------- INDEX: SECCION INVITACION A REGISTRARSE  - MOBILE  ------------*/
 
-.gridSection_registration {
+.section_regInvite {
+    padding: 3% 0 6% 0;
+    margin-bottom: 5%;
     text-align: center;
-    padding: 3% 0;
 }
 
-.regSectionTitle {
+.p_regInviteTitle {
     font-size: 25px;
-    padding: 3% 0;
+    padding: 1% 0;
     color: black;
     font-family: 'Unica One', cursive;
+    text-align: center;
 }
 
-#reg_flexbox {
-    padding-bottom: 3%;
-}
-
-.text {
+.p_mediumText {
     font-size: 13px;
-    padding: 1% 7% 1% 4%;
+    padding: 0 7% 3% 7%;
     letter-spacing: 1px;
+    text-align: center;
 
 }
 
-.regButton a {
+.div_crearCuentaBtn {
     text-decoration: none;
     color: black;
-}
-
-.regButton {
     background-color: #FA3E2F;
-    width: 150px;
-    height: 45px;
-    padding: 3% 5%;
+    padding: 3%;
     border-radius: 45px;
-    margin-left: 35%;
-    margin-top: 7%;
+    text-align: center;
+    font-size: 14px;
 }
 
-/* -------------- SECCION VIDEOS FAVORITOS ------------*/
+/* -------------- INDEX: SECCION VIDEOS FAVORITOS  - MOBILE  ------------*/
 
-.gridSection_favs {
+.section_MonthFavs {
     background-color: #2c2c2c;
     text-align: center;
     background-image: linear-gradient(to right, #2c2c2c, rgba(255, 255, 255, 0.79));
@@ -174,7 +93,7 @@ header {
 .favSectionTitle {
     color: white;
     font-size: 28px;
-    padding: 12% 0 18% 0;
+    padding: 10% 0 15% 0;
     letter-spacing: 2px;
     font-family: 'Unica One', cursive;
 }
@@ -186,14 +105,14 @@ header {
 
 .epigraph {
     color: white;
-    font-size: 18px;
+    font-size: 12px;
     padding: 3% 9%;
     letter-spacing: 1px;
 }
 
-/* -------------- SECCION NOVEDADES ------------*/
+/* -------------- INDEX: SECCION NOVEDADES  - MOBILE ------------*/
 
-.gridSection_news {
+.section_news {
     padding: 2% 0 5% 0;
     text-align: center;
     background-image: linear-gradient(to bottom, rgba(223, 86, 86, 0.79), #555555);
@@ -201,14 +120,9 @@ header {
 
 #newsSectionTitle {
     font-size: 28px;
-    padding: 8% 0 8% 5%;
+    padding: 8% 0 8% 0;
     letter-spacing: 2px;
     font-family: 'Unica One', cursive;
-}
-
-
-article {
-    padding: 2% 2% 5% 7%;
 }
 
 .leerLink a {
@@ -229,11 +143,12 @@ article {
     padding: 1% 5%;
     text-align: center;
     color: black;
+    font-size: 12px;
 }
 
 
 
-/* -------------- ENLACES PRE FOOTER ------------*/
+/* -------------- INDEX: ENLACES PRE FOOTER  - MOBILE  ------------*/
 
 #FnavBarContainer {
     background-color: #2c2c2c;
@@ -258,7 +173,7 @@ article {
 
 
 
-/* -------------- FOOTER ------------*/
+/* -------------- INDEX: FOOTER  - MOBILE ------------*/
 
 #footerContainer {
     background-color: black;
@@ -332,19 +247,36 @@ article {
 }
 
 
-/* -------------- PAGINA NOVEDADES ------------*/
+/* -------------- PAGINA NOVEDADES  - MOBILE  ------------*/
+
+.main_newsPage{
+    background-image: radial-gradient(rgb(236, 122, 122), rgb(29, 29, 29));
+}
+
+#h2_newsTitle{
+    text-shadow: #818181 2px 1px;
+}
 
 .gridNews {
     display: grid;
     grid-template-areas:
-        "header header"
-        "newsArticles_FMS twitterAside"
-        "newsArticles_GODLEVEL twitterAside"
-        "footer footer";
+        "header "
+        "newsArticles_FMS"
+        "newsArticles_GODLEVEL"
+        "twitterAside"
+        "footer";
     grid-column-gap: 50px;
     padding-bottom: 50px;
-    grid-template-columns: 65vw 25vw;
+    grid-template-columns: 95vw;
 
+}
+
+.newsSubtitle{
+    font-family: 'Unica One', cursive;;
+}
+
+.newsPics_newsPage{
+    max-width: 90vw;
 }
 
 .newsArticles_FMS {
@@ -370,8 +302,13 @@ article {
     justify-content: space-around;
 }
 
-.newsPiece {
+.newsPiece_newsPage {
     margin: 2%;
+}
+
+.newsPageEpigraph{
+    padding: 2% 3% 0 3%;
+    text-align: center;
 }
 
 
@@ -394,8 +331,21 @@ article {
     grid-area: twitterAside;
     border: 2px solid black;
     border-radius: 15px;
-    margin-right: 20px;
+    text-align: center;
+    width: 90vw;
+    height: 50vh;
+    background-color: rgb(138, 115, 115);
+    margin-left: 20px;
+    margin-top: 20px;
 }
+
+.h2_aside{
+    font-size: 1.5rem;
+    color: black;
+    padding: 4%;
+}
+
+
 
 
 
@@ -472,33 +422,28 @@ article {
     background-color: black;
 }
 
-/* -------------- MEDIA QUERIES ------------*/
 
 
-/* -------------- MOBILE INTERMEDIO ------------*/
-@media screen and (min-width: 500px) {
 
-    /* -------------- HEADER ------------*/
 
-    #siteTitle {
+/* ----------------- MEDIA QUERIES --------------------------------------------*/
+
+
+
+
+
+/* -------------- MEDIA QUERY: MOBILE INTERMEDIO (1/3) ------------*/
+
+
+@media (min-width: 500px) {
+
+    /* -------------- HEADER - MOBILE INTERMEDIO ------------*/
+
+    .siteTitle {
         font-size: 40px;
-        width: 50%;
     }
 
-    .login-reg-btns {
-        width: 28%;
-        position: absolute;
-        top: 22%;
-        right: 1%;
-    }
-
-    .login-reg-btns .fa-solid {
-        padding: 3% 10% 0 0;
-        font-size: 30px;
-    }
-
-
-    /*--------------- FAVORITOS DEL MES -------------*/
+    /*----- INDEX - SECCION FAVORITOS - MOBILE INTERMEDIO ----*/
 
     .favSectionTitle {
         font-size: 36px;
@@ -521,27 +466,16 @@ article {
         max-width: 40vw;
     }
 
-    /*--------------- NOVEDADES -------------*/
+    .epigraph{
+        font-size: 14px;
+    }
+
+    /*------ INDEX - SECCION NOVEDADES - MOBILE INTERMEDIO ------*/
 
     #newsSectionTitle {
         font-size: 36px;
-        padding: 7% 3% 5% 0;
+        padding: 7% 0 5% 0;
     }
-
-    .newsEpigraph{
-        font-size: 22px;
-    }
-
-    article{
-        padding: 0 5% 3% 0;
-    }
-
-}
-
-/* -------------- TABLET ------------*/
-@media screen and (min-width: 768px) {
-
-    /* -------------- SECCION NOVEDADES ------------*/
 
 
     .news_flexbox{
@@ -551,10 +485,31 @@ article {
     }
 
     .newsPiece{
-        width: 40vw;
+        width: 45vw;
     }
 
-    /* -------------- ENLACES PRE FOOTER ------------*/
+
+    .newsEpigraph{
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+
+
+/* -------------- MEDIA QUERY: TABLET (2/3) ------------*/
+
+
+
+
+
+@media (min-width: 768px) {
+
+
+    /* -------------- ENLACES PRE FOOTER - TABLET  ------------*/
 
     #FnavBarContainer ul {
         padding: 5% 0 3% 5%;
@@ -565,42 +520,60 @@ article {
         padding-bottom: 5%;
     }
 
-    /* -------------- SECCION FOOTER ------------*/
+    /* -------------- SECCION FOOTER - TABLET ------------*/
 
     #followUsContainer {
         padding: 0 0 3% 4%;
     }
 
+
+
+    /* --------- PAGINA NOVEDADES - TABLET */
+
+    .gridNews {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "newsArticles_FMS twitterAside"
+            "newsArticles_GODLEVEL twitterAside";
+        grid-column-gap: 50px;
+        padding-bottom: 50px;
+        grid-template-columns: 65vw 25vw;
+    
+    }
+
+    .twitterAside{
+        max-width: 25vw;
+        margin: 0;
+        height: 100%;
+    }
+
+    .newsPiece_newsPage{
+        max-width: 60vw;
+    }
+
+    .newsPics_newsPage{
+        max-width: 60vw;
+    }
+    
+    
+
 }
 
-/* -------------- DESKTOP ------------*/
-@media screen and (min-width: 1260px) {
 
-    /* -------------- HEADER ------------*/
-    .burgerMenu {
-        display: none;
-    }
 
-    .login-reg-btns {
-        display: none;
-    }
 
-    #siteTitle {
-        padding-left: 5%;
-        width: auto;
-        font-size: 48px;
-    }
+/* -------------- MEDIA QUERY: DESKTOP  (3/3)------------*/
 
-    .navBarContainer {
-        display: block;
-    }
 
-    .navBarLink {
-        text-decoration: none;
-        color: white;
 
-    }
 
+
+@media (min-width: 1020px) {
+
+    /* -------------- HEADER -DESKTOP ------------*/
+    
+    
     .navBarContainer a:after {
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
@@ -626,74 +599,22 @@ article {
         margin-right: 20px;
     }
 
-    .navBarContainer ul {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: 15% 10% 0 5%;
-        list-style: none;
-        justify-content: space-around;
-        padding-bottom: 3%;
-        padding-left: 25%;
+    .collapse{
+        padding-left: 70px;
+        padding-top: 20px;
     }
 
 
-    .headerMainContainer {
-        width: 60%;
-    }
-
-    #headerRightContainer {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 2%;
-        min-width: 220px;
-        text-align: right;
-    }
-
-    #loginButtons {
-        padding: 8% 0 11% 0;
-
-    }
-
-    #loginButtons a {
-        color: white;
-        position: relative;
-        padding-bottom: 5px;
-
-    }
-
-    #loginButtons a:after {
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 2px;
-        left: 50%;
-        position: absolute;
-        background: #FF5733;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
-    }
-
-    #loginButtons a:hover:after {
-        width: 100%;
-        left: 0;
-    }
-
-    .RegBtn {
-        margin-left: 15%;
-        margin-right: 0;
-    }
 
 
-    /* -------------- IMAGEN PRINCIPAL INICIO ------------*/
 
-    .gridSection_carrousel {
+    /* -------------- INDEX - IMAGEN PRINCIPAL - DESKTOP ------------*/
+
+    .section_welcomeImg {
         display: block;
     }
 
-    .gridSection_carrousel_mobile {
+    .section_welcomeImg_mobile {
         display: none;
     }
 
@@ -702,51 +623,53 @@ article {
     }
 
 
-    /* -------------- SECCION INVITACION A REGISTRARSE ------------*/
+    /* -------------- INDEX - SECCION INVITACION A REGISTRARSE - DESKTOP ------------*/
 
-    .gridSection_registration { 
-        padding: 0;
+
+    .section_regInvite{
+        position: relative;
+        margin-bottom: 0;
+        padding: 2% 0 0 0;
     }
 
-    .regSectionTitle {
+    .p_regInviteTitle {
         font-size: 26px;
         letter-spacing: 1.2px;
         padding: 2% 0 0 0;
     }
 
-    #reg_flexbox {
+    .div_regInvFlexbox {
         display: flex;
         flex-flow: row nowrap;
     }
 
-    .text {
+    .p_mediumText {
         font-size: 18px;
-        padding: 3% 8% 5% 8%;
+        padding: 3% 3% 5% 11%;
         width: 50%;
         text-align: center;
 
     }
 
-    .regButton a {
+    .div_crearCuentaBtn {
         color: white;
         letter-spacing: 1px;
-    }
-
-    .regButton {
         background-color: black;
-        position: relative;
-        left: 4%;
+        position: absolute;
+        right: 20%;
+        top: 50%;
         padding: 1.5%;
-        margin: 2% 0 0 0;
         text-align: center;
     }
 
-    .regButton:hover {
+
+    .div_crearCuentaBtn:hover {
         transition: 0.2s;
         background-color: #FA3E2F;
+        color: white;
     }
 
-    /* -------------- SECCION VIDEOS FAVORITOS ------------*/
+    /* -------------- INDEX - SECCION VIDEOS FAVORITOS - DESKTOP ------------*/
 
     .favSectionTitle {
         font-size: 33px;
@@ -770,9 +693,9 @@ article {
         letter-spacing: 1px;
     }
 
-    /* -------------- SECCION NOVEDADES ------------*/
+    /* -------------- INDEX: SECCION NOVEDADES - DESKTOP ------------*/
 
-    .gridSection_news {
+    .section_news {
         padding: 0;
     }
 
@@ -788,9 +711,9 @@ article {
     }
 
 
-    article {
-        width: 22%;
-        padding: 2% 2% 5% 0;
+    .newsPiece {
+        width: 22vw;;
+        
     }
 
     .newsPics {
@@ -798,7 +721,27 @@ article {
     }
 
 
-    /* -------------- ENLACES PRE FOOTER ------------*/
+    /* --------- PAGINA NOVEDADES - DESKTOP ------------------ */
+
+    .newsPageFlexbox{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .newsPiece_newsPage{
+        width: 20vw;
+    }
+
+    .newsPics_newsPage{
+        max-width: 20vw;
+    }
+
+
+
+
+
+
+    /* -------------- ENLACES PRE FOOTER - DESKTOP ------------*/
 
     #FnavBarContainer ul {
         display: flex;
@@ -841,7 +784,7 @@ article {
     }
 
 
-    /* -------------- FOOTER ------------*/
+    /* -------------- FOOTER - DESKTOP ------------*/
 
     #followUsTitle {
         font-size: 20px;
@@ -851,6 +794,9 @@ article {
     #SocialNetworkLinks i {
         font-size: 95px;
     }
+
+
+    /* ------------- INDEX - ANIMACION (desktop only) ---------- */
 
     .dancer_img {
         max-height: 150px;
@@ -865,8 +811,8 @@ article {
         animation-name: giro;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in;
-        animation-duration: 7s;
-        animation-delay: 5s;
+        animation-duration: 5s;
+        animation-delay: 2s;
 
     }
 
@@ -875,7 +821,7 @@ article {
             transform: rotate3d(0, 1, 0, 360deg)
         }
 
-        40% {
+        80% {
             transform: rotate3d(0, 0, 0, 0)
         }
 
