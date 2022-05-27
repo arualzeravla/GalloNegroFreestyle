@@ -1,0 +1,61 @@
+
+
+.LR_pageTitle{
+    text-shadow: $titleShadow;
+    font-size: $titleSize;
+    padding: $tittlePadding;
+    letter-spacing: $titleLetterSpacing;
+    text-align: $subtitleAlign;
+    font-family: $titleFamily;
+    color: $titleColor;
+}
+
+
+.mainLR{
+    background-image: $bgGradient;
+    padding-bottom: 8%;
+}
+
+
+.formContainer {
+    background-color: #ECECEC;
+    text-align: center;
+    margin: 1% 33% 3% 33%;
+    padding: 3% 6%;
+    border-radius: 40px;
+    border: 2px black solid;
+    box-shadow: 2px 3px darkslategray;
+}
+
+.label {
+    padding: 3% 0;
+    border-radius: 40px;
+}
+
+.campo-texto input {
+    border-radius: 5px;
+    padding: 2% 0;
+    width: 250px;
+}
+
+
+
+.boton button {
+    padding: 2% 3%;
+    margin: 8%;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+
+}
+
+#olvidar-contraseña a {
+    color: black;
+    text-decoration: underline;
+}
+
+.boton :hover {
+    background-color: #FF5733;
+}
+

@@ -1,0 +1,27 @@
+
+.videoSection_Container {
+    background-color: black;
+}
+
+.sectionMain_MejoresMins{
+    background-image: $bgGradient;
+}
+
+.favsPageTitle{
+    text-shadow: $titleShadow;
+    font-size: $titleSize;
+    padding: $tittlePadding;
+    letter-spacing: $titleLetterSpacing;
+    text-align: $subtitleAlign;
+    font-family: $titleFamily;
+    color: $titleColor;
+}
+
+.favsPageSubtitle{
+    font-size: $subtitleSize;
+    padding: $subtittlePadding;
+    letter-spacing: $subtitleLetterSpacing;
+    text-align: $subtitleAlign;
+    color: $subtitleColor;
+    font-family: $titleFamily;
+}

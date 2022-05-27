@@ -1,0 +1,60 @@
+/* -------------- HEADER - MOBILE ------------*/
+
+header {
+    border-bottom: #FF5733 2px solid;
+}
+
+
+.siteTitle {
+    padding: 2% 0 3% 2%;
+    font-family: 'Unica One', cursive;
+    font-size: 2rem;
+    width: 180px;
+}
+
+/* ------- HEADER - MOBILE INTERMEDIO -------*/
+
+
+@media (min-width: 500px) {
+
+    .siteTitle {
+        font-size: 40px;
+    }
+
+}
+
+/* -------------- HEADER -DESKTOP ------------*/
+
+
+@media (min-width: 1020px) {
+    
+    .navBarContainer a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #FF5733;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    .navBarContainer a:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    .navBarContainer a {
+        color: white;
+        position: relative;
+        padding: 5px;
+        margin-right: 20px;
+    }
+
+    .collapse{
+        padding-left: 70px;
+        padding-top: 20px;
+    }
+}

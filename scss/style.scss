@@ -1,0 +1,33 @@
+// -------------- IMPORTS ------------
+
+@import "variables";
+@import "header";
+@import "footer";
+@import "index";
+@import "novedades";
+@import "mejoresMinutos";
+@import "proximasFechas";
+@import "loginAndRegister";
+
+/* -------------- AJUSTES GENERALES ------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+}
+
+
+
+

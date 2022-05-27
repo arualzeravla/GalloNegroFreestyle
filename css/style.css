@@ -1,0 +1,588 @@
+@charset "UTF-8";
+/* -------------- HEADER - MOBILE ------------*/
+header {
+  border-bottom: #FF5733 2px solid; }
+
+.siteTitle {
+  padding: 2% 0 3% 2%;
+  font-family: 'Unica One', cursive;
+  font-size: 2rem;
+  width: 180px; }
+
+/* ------- HEADER - MOBILE INTERMEDIO -------*/
+@media (min-width: 500px) {
+  .siteTitle {
+    font-size: 40px; } }
+
+/* -------------- HEADER -DESKTOP ------------*/
+@media (min-width: 1020px) {
+  .navBarContainer a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #FF5733;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0; }
+  .navBarContainer a:hover:after {
+    width: 100%;
+    left: 0; }
+  .navBarContainer a {
+    color: white;
+    position: relative;
+    padding: 5px;
+    margin-right: 20px; }
+  .collapse {
+    padding-left: 70px;
+    padding-top: 20px; } }
+
+/* -------------- INDEX: ENLACES PRE FOOTER  - MOBILE  ------------*/
+#FnavBarContainer {
+  background-color: #2c2c2c;
+  padding: 3% 15%; }
+
+#FnavBarContainer ul {
+  list-style: none;
+  text-align: center;
+  padding: 5% 0; }
+
+#FnavBarContainer a {
+  color: lightgrey;
+  padding-bottom: 5%; }
+
+#FnavBarContainer li {
+  padding-bottom: 5%; }
+
+/* -------------- INDEX: FOOTER  - MOBILE ------------*/
+#footerContainer {
+  background-color: black; }
+
+#followUsContainer {
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 2%; }
+
+#followUsTitle {
+  font-size: 16px;
+  padding: 6% 0;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #F3F3F3; }
+
+#SocialNetworkLinks {
+  display: flex;
+  justify-content: center; }
+
+#SocialNetworkLinks a {
+  color: #F3F3F3;
+  padding: 3%; }
+
+.dancerAnimacion {
+  display: none; }
+
+#SocialNetworkLinks i {
+  font-size: 35px;
+  text-align: center; }
+
+#copyrightContainer {
+  text-align: right;
+  padding: 6% 2% 2% 0;
+  color: #B9B9B9;
+  letter-spacing: 1px;
+  font-size: 11px; }
+
+.fa-copyright {
+  padding-right: 5px; }
+
+@media (min-width: 768px) {
+  /* -------------- ENLACES PRE FOOTER - TABLET  ------------*/
+  #FnavBarContainer ul {
+    padding: 5% 0 3% 5%; }
+  #FnavBarContainer li {
+    padding-bottom: 5%; }
+  /* -------------- SECCION FOOTER - TABLET ------------*/
+  #followUsContainer {
+    padding: 0 0 3% 4%; } }
+
+@media (min-width: 1020px) {
+  /* -------------- ENLACES PRE FOOTER - DESKTOP ------------*/
+  #FnavBarContainer ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0; }
+  .FnavBarLink {
+    position: relative;
+    padding: 5px;
+    text-decoration: none;
+    color: #FF5733; }
+  #FnavBarContainer a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #FF5733;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0; }
+  #FnavBarContainer a:hover:after {
+    width: 100%;
+    left: 0; }
+  #FnavBarContainer a {
+    padding: 5px; }
+  #FnavBarContainer li {
+    padding-bottom: 0; }
+  /* -------------- FOOTER - DESKTOP ------------*/
+  #followUsTitle {
+    font-size: 20px;
+    padding: 6% 0 4% 0; }
+  #SocialNetworkLinks i {
+    font-size: 95px; } }
+
+/* -------------- IMAGEN PRINCIPAL - MOBILE ------------*/
+.section_welcomeImg {
+  display: none; }
+
+.section_welcomeImg_mobile {
+  text-align: center;
+  background-color: #2c2c2c; }
+
+.mainImage {
+  width: 100%; }
+
+/* -------------- SECCION INVITACION A REGISTRARSE  - MOBILE  ------------*/
+.section_regInvite {
+  padding: 3% 0 6% 0;
+  margin-bottom: 5%;
+  text-align: center; }
+
+.p_regInviteTitle {
+  font-size: 25px;
+  padding: 1% 0;
+  color: black;
+  font-family: 'Unica One', cursive;
+  text-align: center; }
+
+.p_mediumText {
+  font-size: 13px;
+  padding: 0 7% 3% 7%;
+  letter-spacing: 1px;
+  text-align: center; }
+
+.div_crearCuentaBtn {
+  text-decoration: none;
+  color: black;
+  background-color: #FA3E2F;
+  padding: 3%;
+  border-radius: 45px;
+  text-align: center;
+  font-size: 14px; }
+
+/* -------------- SECCION VIDEOS FAVORITOS  - MOBILE  ------------*/
+.section_MonthFavs {
+  background-color: #2c2c2c;
+  text-align: center;
+  background-image: linear-gradient(to right, #2c2c2c, rgba(255, 255, 255, 0.79)); }
+
+.favSectionTitle {
+  color: white;
+  font-size: 28px;
+  padding: 10% 0 15% 0;
+  letter-spacing: 2px;
+  font-family: 'Unica One', cursive; }
+
+.videoSection {
+  padding-bottom: 12%; }
+
+.epigraph {
+  color: white;
+  font-size: 12px;
+  padding: 3% 9%;
+  letter-spacing: 1px; }
+
+/* -------------- SECCION NOVEDADES  - MOBILE ------------*/
+.section_news {
+  padding: 2% 0 5% 0;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(223, 86, 86, 0.79), #555555); }
+
+#newsSectionTitle {
+  font-size: 28px;
+  padding: 8% 0 8% 0;
+  letter-spacing: 2px;
+  font-family: 'Unica One', cursive; }
+
+.leerLink a {
+  color: black; }
+
+.leerLink {
+  text-align: right;
+  padding-right: 8%; }
+
+.newsPics {
+  max-width: 90%; }
+
+.newsEpigraph {
+  padding: 1% 5%;
+  text-align: center;
+  color: black;
+  font-size: 12px; }
+
+/* -------------- MEDIA QUERY: MOBILE INTERMEDIO (1/3) ------------*/
+@media (min-width: 500px) {
+  /*-----  SECCION FAVORITOS - MOBILE INTERMEDIO ----*/
+  .favSectionTitle {
+    font-size: 36px;
+    padding: 8% 0 8% 0; }
+  .videoSection {
+    padding: 0 5% 0 0;
+    width: 40%; }
+  .videosContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap; }
+  iframe_indexFavs {
+    max-width: 40vw; }
+  .epigraph {
+    font-size: 14px; }
+  /*------ SECCION NOVEDADES - MOBILE INTERMEDIO ------*/
+  #newsSectionTitle {
+    font-size: 36px;
+    padding: 7% 0 5% 0; }
+  .news_flexbox {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap; }
+  .newsPiece {
+    width: 45vw; }
+  .newsEpigraph {
+    font-size: 14px; } }
+
+@media (min-width: 1020px) {
+  /* -------------- IMAGEN PRINCIPAL - DESKTOP ------------*/
+  .section_welcomeImg {
+    display: block; }
+  .section_welcomeImg_mobile {
+    display: none; }
+  .mainImage {
+    max-width: 100vw; }
+  /* -------------- SECCION INVITACION A REGISTRARSE - DESKTOP ------------*/
+  .section_regInvite {
+    position: relative;
+    margin-bottom: 0;
+    padding: 2% 0 0 0; }
+  .p_regInviteTitle {
+    font-size: 26px;
+    letter-spacing: 1.2px;
+    padding: 2% 0 0 0; }
+  .div_regInvFlexbox {
+    display: flex;
+    flex-flow: row nowrap; }
+  .p_mediumText {
+    font-size: 18px;
+    padding: 3% 3% 5% 11%;
+    width: 50%;
+    text-align: center; }
+  .div_crearCuentaBtn {
+    color: white;
+    letter-spacing: 1px;
+    background-color: black;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    padding: 1.5%;
+    text-align: center; }
+  .div_crearCuentaBtn:hover {
+    transition: 0.2s;
+    background-color: #FA3E2F;
+    color: white; }
+  /* -------------- SECCION VIDEOS FAVORITOS - DESKTOP ------------*/
+  .favSectionTitle {
+    font-size: 33px;
+    padding: 4% 0 5% 0; }
+  .videosContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+  .videoSection {
+    padding-bottom: 4%;
+    width: 33%; }
+  .epigraph {
+    font-size: 15px;
+    padding: 3% 15%;
+    letter-spacing: 1px; }
+  /* -------------- SECCION NOVEDADES - DESKTOP ------------*/
+  .section_news {
+    padding: 0; }
+  #newsSectionTitle {
+    font-size: 33px;
+    padding: 4% 0 5% 0; }
+  .news_flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  .newsPiece {
+    width: 22vw; }
+  .newsPics {
+    max-width: 20vw; }
+  /* ------------- ANIMACION (desktop only) ---------- */
+  .dancer_img {
+    max-height: 150px; }
+  .dancerAnimacion {
+    display: block;
+    width: 180px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    animation-name: giro;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 2s; }
+  @keyframes giro {
+    0% {
+      transform: rotate3d(0, 1, 0, 360deg); }
+    80% {
+      transform: rotate3d(0, 0, 0, 0); }
+    100% {
+      transform: rotate3d(0, 0, 0, 0); } }
+  #copyrightContainer {
+    padding: 0 2% 2% 0;
+    font-size: 14px; } }
+
+/* -------------- PAGINA NOVEDADES  - MOBILE  ------------*/
+.main_newsPage {
+  background-image: radial-gradient(#ec7a7a, #1d1d1d); }
+
+#h2_newsTitle {
+  text-shadow: #949494 2px 1px;
+  font-size: 36px;
+  padding: 5% 0;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "Unica One", cursive;
+  color: white; }
+
+.gridNews {
+  display: grid;
+  grid-template-areas: "newsArticles_FMS" "newsArticles_GODLEVEL" "twitterAside";
+  grid-row-gap: 50px;
+  padding-bottom: 50px;
+  grid-template-columns: 95vw; }
+
+.newsSubtitle {
+  font-size: 22px;
+  padding: 2% 0;
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Unica One", cursive; }
+
+.newsPics_newsPage {
+  max-width: 90vw; }
+
+.newsArticles_FMS {
+  grid-area: newsArticles_FMS;
+  color: white;
+  border-radius: 15px;
+  margin-left: 20px; }
+
+.newsArticles_GODLEVEL {
+  grid-area: newsArticles_GODLEVEL;
+  color: white;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-top: 40px; }
+
+.newsPageFlexbox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+
+.newsPiece_newsPage {
+  margin: 2%; }
+
+.newsPageEpigraph {
+  padding: 2% 3% 0 3%;
+  text-align: center; }
+
+.leerLink_newsPage a {
+  color: white;
+  text-decoration: underline; }
+
+.leerLink_newsPage {
+  text-align: right;
+  padding-right: 8%; }
+
+.leerLink_newsPage a:hover {
+  color: #FA3E2F; }
+
+.twitterAside {
+  grid-area: twitterAside;
+  text-align: center;
+  width: 90vw;
+  margin-left: 20px;
+  margin-top: 20px; }
+
+.h2_aside {
+  font-size: 1.5rem;
+  color: white;
+  padding: 2% 0; }
+
+/* --------- MEDIA QUERY - MOBILE INTERMEDIO --------------- */
+@media (min-width: 650px) {
+  .div_twitterPosts {
+    margin-left: 7%; } }
+
+/* --------- MEDIA QUERY - TABLET --------------- */
+@media (min-width: 860px) {
+  .gridNews {
+    display: grid;
+    grid-template-areas: "header header" "newsArticles_FMS twitterAside" "newsArticles_GODLEVEL twitterAside";
+    grid-column-gap: 3vw;
+    padding-bottom: 50px;
+    grid-template-columns: 60vw 35vw; }
+  .twitterAside {
+    max-width: 35vw;
+    margin: 0;
+    height: 100%;
+    text-align: center; }
+  .newsPiece_newsPage {
+    max-width: 60vw; }
+  .newsPics_newsPage {
+    max-width: 55vw; }
+  .twitter-twit {
+    text-align: center; } }
+
+/* -------------- MEDIA QUERY: DESKTOP ------------*/
+@media (min-width: 1020px) {
+  .newsPageFlexbox {
+    display: flex;
+    flex-flow: row wrap; }
+  .newsPiece_newsPage {
+    width: 20vw; }
+  .newsPics_newsPage {
+    max-width: 20vw; } }
+
+.videoSection_Container {
+  background-color: black; }
+
+.sectionMain_MejoresMins {
+  background-image: radial-gradient(#ec7a7a, #1d1d1d); }
+
+.favsPageTitle {
+  text-shadow: #949494 2px 1px;
+  font-size: 36px;
+  padding: 5% 0;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "Unica One", cursive;
+  color: white; }
+
+.favsPageSubtitle {
+  font-size: 22px;
+  padding: 2% 0;
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Unica One", cursive; }
+
+.proximasFechasSection {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+  text-align: center;
+  padding: 2% 20%;
+  row-gap: 10px; }
+
+.tableHeader {
+  font-size: 20px;
+  font-weight: bold; }
+
+.value {
+  border: 1px solid lightgray;
+  padding: 5px 0; }
+
+.comingSoonPageTitle {
+  text-shadow: #949494 2px 1px;
+  font-size: 36px;
+  padding: 5% 0;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "Unica One", cursive;
+  color: white; }
+
+.comingSoonPageSubtitle {
+  font-size: 22px;
+  padding: 2% 0;
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Unica One", cursive; }
+
+.section_comingSoonPage {
+  background-image: radial-gradient(#ec7a7a, #1d1d1d); }
+
+.LR_pageTitle {
+  text-shadow: #949494 2px 1px;
+  font-size: 36px;
+  padding: 5% 0;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "Unica One", cursive;
+  color: white; }
+
+.mainLR {
+  background-image: radial-gradient(#ec7a7a, #1d1d1d);
+  padding-bottom: 8%; }
+
+.formContainer {
+  background-color: #ECECEC;
+  text-align: center;
+  margin: 1% 33% 3% 33%;
+  padding: 3% 6%;
+  border-radius: 40px;
+  border: 2px black solid;
+  box-shadow: 2px 3px darkslategray; }
+
+.label {
+  padding: 3% 0;
+  border-radius: 40px; }
+
+.campo-texto input {
+  border-radius: 5px;
+  padding: 2% 0;
+  width: 250px; }
+
+.boton button {
+  padding: 2% 3%;
+  margin: 8%;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: black;
+  color: white; }
+
+#olvidar-contraseña a {
+  color: black;
+  text-decoration: underline; }
+
+.boton :hover {
+  background-color: #FF5733; }
+
+/* -------------- AJUSTES GENERALES ------------*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold; }
+
+a {
+  text-decoration: none; }
+
+body {
+  padding: 0;
+  margin: 0;
+  max-width: 100vw; }

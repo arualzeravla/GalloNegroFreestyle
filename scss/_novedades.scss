@@ -1,0 +1,179 @@
+/* -------------- PAGINA NOVEDADES  - MOBILE  ------------*/
+
+.main_newsPage{
+    background-image: $bgGradient;
+}
+
+#h2_newsTitle{
+    text-shadow: $titleShadow;
+    font-size: $titleSize;
+    padding: $tittlePadding;
+    letter-spacing: $titleLetterSpacing;
+    text-align: $subtitleAlign;
+    font-family: $titleFamily;
+    color: $titleColor;
+}
+
+.gridNews {
+    display: grid;
+    grid-template-areas:
+        "newsArticles_FMS"
+        "newsArticles_GODLEVEL"
+        "twitterAside";
+    grid-row-gap: 50px;
+    padding-bottom: 50px;
+    grid-template-columns: 95vw;
+
+}
+
+.newsSubtitle{
+    font-size: $subtitleSize;
+    padding: $subtittlePadding;
+    letter-spacing: $subtitleLetterSpacing;
+    text-align: $subtitleAlign;
+    color: $subtitleColor;
+    font-family: $titleFamily;
+}
+
+.newsPics_newsPage{
+    max-width: 90vw;
+}
+
+.newsArticles_FMS {
+    grid-area: newsArticles_FMS;
+    color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.newsArticles_GODLEVEL {
+    grid-area: newsArticles_GODLEVEL;
+    color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.newsPageFlexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.newsPiece_newsPage {
+    margin: 2%;
+}
+
+.newsPageEpigraph{
+    padding: 2% 3% 0 3%;
+    text-align: center;
+}
+
+
+.leerLink_newsPage a {
+    color: white;
+    text-decoration: underline;
+}
+
+.leerLink_newsPage {
+    text-align: right;
+    padding-right: 8%;
+}
+
+.leerLink_newsPage a:hover {
+    color: #FA3E2F;
+}
+
+
+.twitterAside {
+    grid-area: twitterAside;
+    text-align: center;
+    width: 90vw;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.h2_aside{
+    font-size: 1.5rem;
+    color: white;
+    padding: 2% 0;
+}
+
+
+/* --------- MEDIA QUERY - MOBILE INTERMEDIO --------------- */
+
+
+@media (min-width: 650px){
+
+    .div_twitterPosts{
+        margin-left: 7%;
+    }
+
+
+}
+
+
+/* --------- MEDIA QUERY - TABLET --------------- */
+
+@media (min-width: 860px) {
+
+    .gridNews {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "newsArticles_FMS twitterAside"
+            "newsArticles_GODLEVEL twitterAside";
+        grid-column-gap: 3vw;
+        padding-bottom: 50px;
+        grid-template-columns: 60vw 35vw;
+    
+    }
+
+    .twitterAside{
+        max-width: 35vw;
+        margin: 0;
+        height: 100%;
+        text-align: center;
+    }
+
+    .newsPiece_newsPage{
+        max-width: 60vw;
+    }
+
+    .newsPics_newsPage{
+        max-width: 55vw;
+    }
+    
+    .div_twitterPosts{
+        
+    }
+
+    .twitter-twit{
+        text-align: center;
+    }
+
+
+}
+
+
+
+/* -------------- MEDIA QUERY: DESKTOP ------------*/
+
+
+@media (min-width: 1020px){
+
+
+    .newsPageFlexbox{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .newsPiece_newsPage{
+        width: 20vw;
+    }
+
+    .newsPics_newsPage{
+        max-width: 20vw;
+    }
+    
+}
