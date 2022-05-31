@@ -1,0 +1,41 @@
+.proximasFechasSection {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    text-align: center;
+    padding: 2% 20%;
+    row-gap: 10px;
+
+}
+
+.tableHeader {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.value {
+    border: 1px solid lightgray;
+    padding: 5px 0;
+}
+
+.comingSoonPageTitle{
+    text-shadow: $titleShadow;
+    font-size: $titleSize;
+    padding: $tittlePadding;
+    letter-spacing: $titleLetterSpacing;
+    text-align: $subtitleAlign;
+    font-family: $titleFamily;
+    color: $titleColor;
+}
+
+.comingSoonPageSubtitle{
+    font-size: $subtitleSize;
+    padding: $subtittlePadding;
+    letter-spacing: $subtitleLetterSpacing;
+    text-align: $subtitleAlign;
+    color: $subtitleColor;
+    font-family: $titleFamily;
+}
+
+.section_comingSoonPage{
+    background-image: $bgGradient;
+}
