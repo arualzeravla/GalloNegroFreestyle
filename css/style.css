@@ -364,7 +364,7 @@ header {
   padding: 5% 0;
   letter-spacing: 2px;
   text-align: center;
-  font-family: "Unica One", cursive;
+  font-family: "Unica One";
   color: white; }
 
 .gridNews {
@@ -379,8 +379,8 @@ header {
   padding: 2% 0;
   letter-spacing: 2px;
   text-align: center;
-  color: white;
-  font-family: "Unica One", cursive; }
+  font-family: "Unica One";
+  color: white; }
 
 .newsPics_newsPage {
   max-width: 90vw; }
@@ -427,11 +427,6 @@ header {
   width: 90vw;
   margin-left: 20px;
   margin-top: 20px; }
-
-.h2_aside {
-  font-size: 1.5rem;
-  color: white;
-  padding: 2% 0; }
 
 /* --------- MEDIA QUERY - MOBILE INTERMEDIO --------------- */
 @media (min-width: 650px) {
@@ -480,7 +475,7 @@ header {
   padding: 5% 0;
   letter-spacing: 2px;
   text-align: center;
-  font-family: "Unica One", cursive;
+  font-family: "Unica One";
   color: white; }
 
 .favsPageSubtitle {
@@ -488,8 +483,8 @@ header {
   padding: 2% 0;
   letter-spacing: 2px;
   text-align: center;
-  color: white;
-  font-family: "Unica One", cursive; }
+  font-family: "Unica One";
+  color: white; }
 
 .proximasFechasSection {
   display: grid;
@@ -512,7 +507,7 @@ header {
   padding: 5% 0;
   letter-spacing: 2px;
   text-align: center;
-  font-family: "Unica One", cursive;
+  font-family: "Unica One";
   color: white; }
 
 .comingSoonPageSubtitle {
@@ -520,8 +515,8 @@ header {
   padding: 2% 0;
   letter-spacing: 2px;
   text-align: center;
-  color: white;
-  font-family: "Unica One", cursive; }
+  font-family: "Unica One";
+  color: white; }
 
 .section_comingSoonPage {
   background-image: radial-gradient(#ec7a7a, #1d1d1d); }
@@ -532,7 +527,7 @@ header {
   padding: 5% 0;
   letter-spacing: 2px;
   text-align: center;
-  font-family: "Unica One", cursive;
+  font-family: "Unica One";
   color: white; }
 
 .mainLR {

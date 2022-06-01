@@ -1,13 +1,13 @@
 
 
 .LR_pageTitle{
-    text-shadow: $titleShadow;
-    font-size: $titleSize;
-    padding: $tittlePadding;
-    letter-spacing: $titleLetterSpacing;
-    text-align: $subtitleAlign;
-    font-family: $titleFamily;
-    color: $titleColor;
+    text-shadow: map-get($titulosDePaginas,titleShadow);
+    font-size: map-get($titulosDePaginas,titleSize);
+    padding: map-get($titulosDePaginas,titlePadding);
+    letter-spacing: map-get($titulosDePaginas,titleLetterSpacing);
+    text-align: map-get($titulosDePaginas,titleAlign);
+    font-family: map-get($titulosDePaginas,titleFamily);
+    color: map-get($titulosDePaginas,titleColor);
 }
 
 

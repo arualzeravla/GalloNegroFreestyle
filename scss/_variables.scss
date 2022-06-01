@@ -4,17 +4,10 @@
 $bgGradient: radial-gradient(rgb(236, 122, 122), rgb(29, 29, 29));
 
 //TITULO PAGINA SECUNDARIA
-$titleShadow: #949494 2px 1px;
-$titleSize: 36px;
-$tittlePadding: 5% 0;
-$titleLetterSpacing: 2px;
-$titleAlign: center;
-$titleFamily: 'Unica One', cursive;
-$titleColor: white;
+$titulosDePaginas: (titleShadow: #949494 2px 1px, titleSize: 36px, titlePadding: 5% 0, titleLetterSpacing: 2px, titleAlign: center, titleFamily: 'Unica One', titleColor: white);
 
 //SUBTITULOS
-$subtitleSize: 22px;
-$subtittlePadding: 2% 0;
-$subtitleLetterSpacing: 2px;
-$subtitleAlign: center;
-$subtitleColor: white;
+$subtitulosDePaginas: (subTitleSize: 22px, subTitlePadding: 2% 0, subTitleLetterSpacing: 2px, subTitleAlign: center, subTitleFamily: 'Unica One', subTitleColor: white);
+
+
+

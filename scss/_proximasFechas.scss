@@ -18,22 +18,22 @@
 }
 
 .comingSoonPageTitle{
-    text-shadow: $titleShadow;
-    font-size: $titleSize;
-    padding: $tittlePadding;
-    letter-spacing: $titleLetterSpacing;
-    text-align: $subtitleAlign;
-    font-family: $titleFamily;
-    color: $titleColor;
+    text-shadow: map-get($titulosDePaginas,titleShadow);
+    font-size: map-get($titulosDePaginas,titleSize);
+    padding: map-get($titulosDePaginas,titlePadding);
+    letter-spacing: map-get($titulosDePaginas,titleLetterSpacing);
+    text-align: map-get($titulosDePaginas,titleAlign);
+    font-family: map-get($titulosDePaginas,titleFamily);
+    color: map-get($titulosDePaginas,titleColor);
 }
 
 .comingSoonPageSubtitle{
-    font-size: $subtitleSize;
-    padding: $subtittlePadding;
-    letter-spacing: $subtitleLetterSpacing;
-    text-align: $subtitleAlign;
-    color: $subtitleColor;
-    font-family: $titleFamily;
+    font-size: map-get($subtitulosDePaginas,subTitleSize);
+    padding: map-get($subtitulosDePaginas,subTitlePadding);
+    letter-spacing: map-get($subtitulosDePaginas,subTitleLetterSpacing);
+    text-align: map-get($subtitulosDePaginas,subTitleAlign);
+    font-family: map-get($subtitulosDePaginas,subTitleFamily);
+    color: map-get($subtitulosDePaginas,subTitleColor);
 }
 
 .section_comingSoonPage{
