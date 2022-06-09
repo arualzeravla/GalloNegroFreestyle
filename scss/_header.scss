@@ -12,6 +12,10 @@ header {
     width: 180px;
 }
 
+.div_header{
+    height: 11vh;
+}
+
 /* ------- HEADER - MOBILE INTERMEDIO -------*/
 
 
@@ -26,7 +30,7 @@ header {
 /* -------------- HEADER -DESKTOP ------------*/
 
 
-@media (min-width: 1020px) {
+@media (min-width: 1200px) {
     
     .navBarContainer a:after {
         background: none repeat scroll 0 0 transparent;
@@ -50,11 +54,30 @@ header {
         color: white;
         position: relative;
         padding: 5px;
-        margin-right: 20px;
+        margin-right: 2vw;
     }
 
     .collapse{
         padding-left: 70px;
         padding-top: 20px;
+    }
+
+    .nav-link{
+        font-size: 0.9em;
+    }
+
+    .form_search{
+        width: 22vw;
+        height: 28px;
+    }
+
+    ::placeholder{
+        font-size: 15px;
+    }
+
+    .btn_search{
+        font-size: 15px;
+        padding: 2px 6px 6px 6px;
+
     }
 }

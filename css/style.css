@@ -9,13 +9,16 @@ header {
   font-size: 2rem;
   width: 180px; }
 
+.div_header {
+  height: 11vh; }
+
 /* ------- HEADER - MOBILE INTERMEDIO -------*/
 @media (min-width: 500px) {
   .siteTitle {
     font-size: 40px; } }
 
 /* -------------- HEADER -DESKTOP ------------*/
-@media (min-width: 1020px) {
+@media (min-width: 1200px) {
   .navBarContainer a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
@@ -34,10 +37,20 @@ header {
     color: white;
     position: relative;
     padding: 5px;
-    margin-right: 20px; }
+    margin-right: 2vw; }
   .collapse {
     padding-left: 70px;
-    padding-top: 20px; } }
+    padding-top: 20px; }
+  .nav-link {
+    font-size: 0.9em; }
+  .form_search {
+    width: 22vw;
+    height: 28px; }
+  ::placeholder {
+    font-size: 15px; }
+  .btn_search {
+    font-size: 15px;
+    padding: 2px 6px 6px 6px; } }
 
 /* -------------- INDEX: ENLACES PRE FOOTER  - MOBILE  ------------*/
 #FnavBarContainer {
@@ -356,7 +369,7 @@ header {
 
 /* -------------- PAGINA NOVEDADES  - MOBILE  ------------*/
 .main_newsPage {
-  background-image: radial-gradient(#ec7a7a, #1d1d1d); }
+  background-image: radial-gradient(#5a5a5a, #1d1d1d); }
 
 #h2_newsTitle {
   text-shadow: #949494 2px 1px;
