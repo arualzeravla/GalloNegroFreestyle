@@ -1,4 +1,5 @@
 
+/*---------------------- Login and Register Pages: MOBILE  -----------------------------*/
 
 .LR_pageTitle{
     text-shadow: map-get($titulosDePaginas,titleShadow);
@@ -8,6 +9,7 @@
     text-align: map-get($titulosDePaginas,titleAlign);
     font-family: map-get($titulosDePaginas,titleFamily);
     color: map-get($titulosDePaginas,titleColor);
+    margin: 0 3%;
 }
 
 
@@ -16,12 +18,11 @@
     padding-bottom: 8%;
 }
 
-
 .formContainer {
+    margin: 6% 12%;
+    padding: 5% 6% 3% 6%;
     background-color: #ECECEC;
     text-align: center;
-    margin: 1% 33% 3% 33%;
-    padding: 3% 6%;
     border-radius: 40px;
     border: 2px black solid;
     box-shadow: 2px 3px darkslategray;
@@ -33,9 +34,22 @@
 }
 
 .campo-texto input {
+    width: 180px;
+    font-size: 13px;
     border-radius: 5px;
-    padding: 2% 0;
-    width: 250px;
+    padding: 2%;
+}
+
+.div_checkbox{
+    font-size: 13px;
+    
+}
+
+.div_checkboxesContainer{
+    width: 180px;
+    text-align: center;
+    margin: auto;
+    padding: 0;
 }
 
 
@@ -59,3 +73,41 @@
     background-color: #FF5733;
 }
 
+/*---------------------- Login and Register Pages: MEDIA QUERIES: TABLET  -----------------------------*/
+
+@media (min-width: 450px) {
+    
+    .formContainer {
+        margin: 3% 15% 6% 15%;
+        padding: 6% 8% 4% 8%;
+
+    }
+
+    .campo-texto input {
+        width: 210px;
+        font-size: 13px;
+    }
+
+    .div_checkbox{
+        font-size: 13px;
+        text-align: left;
+        
+    }
+
+}
+
+/*---------------------- Login and Register Pages: MEDIA QUERIES: DESKTOP  -----------------------------*/
+
+@media (min-width: 730px) {
+    
+    .formContainer {
+        margin: 3% 25% 6% 25%;
+        padding: 4% 3% 3% 3%;
+
+    }
+
+    .campo-texto input {
+        width: 250px;
+    }
+
+}

@@ -28,7 +28,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
             <div class="container-fluid div_header">
                 <h1><a class="navbar-brand siteTitle" href="index.html">Gallo Negro</a></h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -104,14 +104,18 @@
                     <input type="password" name= "password" placeholder="Repetir contraseña" class="contrasenia">
                 </div>
 
-                <div class="label" id="mantener-conectado">
+                <div class="div_checkboxesContainer">
+
+                <div class="label div_checkbox">
                     <input type="checkbox" name="rememberUser" value="mantener-conectado" id="mantener">
-                    <label for="mantener">Mantenerme conectado</label>
+                    <label class="label_keepLog" for="mantener">Mantenerme conectado</label>
                 </div>
 
-                <div class="label" id="mantener-conectado">
+                <div class="label div_checkbox">
                     <input type="checkbox" name="rememberUser" value="mantener-conectado" id="mantener">
-                    <label for="mantener">Suscribir mi correo para recibir novedades</label>
+                    <label for="mantener">Suscribir mi correo <br> para recibir novedades</label>
+                </div>
+
                 </div>
 
                 <div class="boton" id="ingresar">

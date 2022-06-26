@@ -1,0 +1,71 @@
+
+/*---------------------- news Articles Pages: MOBILE  -----------------------------*/
+
+.mainNewsArticle{
+    background-color: rgb(58, 58, 58);
+    padding-bottom: 8%;
+}
+
+.h3_preNewsArticle{
+    text-shadow: map-get($titulosDePaginas,titleShadow);
+    letter-spacing: map-get($titulosDePaginas,titleLetterSpacing);
+    text-align: left;
+    font-family: map-get($titulosDePaginas,titleFamily);
+    color: map-get($titulosDePaginas,titleColor);
+    margin: 3% 0 0 3%;
+}
+
+.h2_newsArticle_pageTitle{
+    text-shadow: map-get($titulosDePaginas,titleShadow);
+    font-size: map-get($titulosDePaginas,titleSize);
+    letter-spacing: map-get($titulosDePaginas,titleLetterSpacing);
+    text-align: left;
+    font-family: map-get($titulosDePaginas,titleFamily);
+    color: map-get($titulosDePaginas,titleColor);
+    margin: 2% 0 2% 3%;
+    font-size: 1.8em;
+}
+
+.h4_legend{
+    letter-spacing: map-get($titulosDePaginas,titleLetterSpacing);
+    text-align: left;
+    font-size: 18px;
+    color: map-get($titulosDePaginas,titleColor);
+    margin: 1% 0 0 3%;
+}
+
+.newsPics_artPage{
+    width: 85vw;
+}
+
+.div_imgNewsArt{
+    text-align: center;
+    padding: 3% 0;
+}
+
+.p_artText{
+    margin: 1% 5% 0 3%;
+    color: rgb(216, 216, 216);
+    letter-spacing: map-get($titulosDePaginas,titleLetterSpacing);
+    text-align: justify;
+}
+
+
+
+/*---------------------- MEDIA QUERIES: TABLET  -----------------------------*/
+
+@media (min-width: 620px) {
+    
+    .newsPics_artPage{
+        width: 70vw;
+    }
+}
+
+/*---------------------- MEDIA QUERIES: DESKTOP  -----------------------------*/
+
+@media (min-width: 1000px) {
+    .newsPics_artPage{
+        width: 50vw;
+    }
+
+}

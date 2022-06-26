@@ -8,6 +8,7 @@
 @import "mejoresMinutos";
 @import "proximasFechas";
 @import "loginAndRegister";
+@import "newsArticles";
 
 /* -------------- AJUSTES GENERALES ------------*/
 
@@ -29,9 +30,15 @@ body{
 }
 
 main{
-    padding-top: 18vh;
+    padding-top: 15vh;
 }
 
+
+@media (min-width: 1200px) {
+    main{
+        padding-top: 18vh;
+    }
+}
 
 
 
