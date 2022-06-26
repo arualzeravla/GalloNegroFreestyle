@@ -50,7 +50,6 @@
 /* -------------- SECCION VIDEOS FAVORITOS  - MOBILE  ------------*/
 
 .section_MonthFavs {
-    background-color: #2c2c2c;
     text-align: center;
     background-image: linear-gradient(to right, #2c2c2c, rgba(255, 255, 255, 0.79));
 }
@@ -66,7 +65,12 @@
 
 .videoSection {
     padding-bottom: 12%;
+    max-width: 100vw;
 
+}
+
+.iframe_indexFavs {
+width: 80vw;
 }
 
 .epigraph {
@@ -140,8 +144,8 @@
         flex-flow: row wrap;
     }
 
-    iframe_indexFavs {
-        max-width: 40vw;
+    .iframe_indexFavs {
+        width: 40vw;
     }
 
     .epigraph {
@@ -256,6 +260,10 @@
     .videoSection {
         padding-bottom: 4%;
         width: 33%;
+    }
+
+    .iframe_indexFavs {
+        width: 30vw;
     }
 
     .epigraph {
