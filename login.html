@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gallo Negro</title>
-    
-        <!-- GOOGLE FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Montserrat:wght@100&family=Quicksand:wght@300&family=Unica+One&display=swap"
-            rel="stylesheet">
-    
-        <!-- FONTAWSOME -->
-        <script src="https://kit.fontawesome.com/3a20aadc82.js" crossorigin="anonymous"></script>
-    
-        <!-- BOOTSTRAP -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
-    
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallo Negro</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Montserrat:wght@100&family=Quicksand:wght@300&family=Unica+One&display=swap"
+        rel="stylesheet">
+
+    <!-- FONTAWSOME -->
+    <script src="https://kit.fontawesome.com/3a20aadc82.js" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand siteTitle" href="index.html">Gallo Negro</a>
+            <div class="container-fluid div_header">
+                <h1><a class="navbar-brand siteTitle" href="index.html">Gallo Negro</a></h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -83,13 +83,13 @@
         <h2 class="LR_pageTitle">Ingresá a tu cuenta</h2>
         <div class="formContainer">
             <form action="/usuarios/iniciarSesion" method="POST" class="formulario-login" id="formularioLogin">
-                        
+
                 <div class="campo-texto label">
-                    <input type="email" name ="email" placeholder="Correo electrónico" class="email">
+                    <input type="email" name="email" placeholder="Correo electrónico" class="email">
                 </div>
 
                 <div class="campo-texto label">
-                    <input type="password" name= "password" placeholder="Contraseña" class="contrasenia">
+                    <input type="password" name="password" placeholder="Contraseña" class="contrasenia">
                 </div>
 
                 <div class="label" id="mantener-conectado">
@@ -141,10 +141,10 @@
         </div>
     </footer>
 
-        <!-- BOOTSTRAP SCRIPT -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
