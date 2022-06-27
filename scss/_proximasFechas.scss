@@ -1,8 +1,10 @@
+/* PROXIMAS FECHAS - MOBILE*/
+
 .proximasFechasSection {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr;
     text-align: center;
-    padding: 2% 20%;
+    padding: 2% 10%;
     row-gap: 10px;
 
 }
@@ -38,4 +40,15 @@
 
 .section_comingSoonPage{
     background-image: $bgGradient;
+}
+
+/* PROXIMAS FECHAS - DESKTOP*/
+
+@media (min-width: 550px){
+
+    .proximasFechasSection {
+        padding: 2% 20%;
+    
+    }
+
 }
